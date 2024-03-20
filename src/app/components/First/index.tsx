@@ -43,7 +43,7 @@ const MyComponent: React.FC = () => {
         <div className="absolute top-0 left-0 transform -translate-x-2 -translate-y-2 lg:-translate-x-4 lg:-translate-y-4 text-3xl lg:text-5xl">
           &ldquo;
         </div>
-        ONE <span className="text-red-600">COMMUNITY</span> <br /> INFINITE{" "}
+        ONE <span className="text-red-600">COMMUNITY</span> <br /><span ></span> INFINITE{" "}
         <span className="text-red-600">POSSIBILITIES</span>..
         <div className="absolute bottom-0 right-0 transform translate-x-2 translate-y-2 lg:translate-x-4 lg:translate-y-4 text-3xl lg:text-5xl">
           &rdquo;

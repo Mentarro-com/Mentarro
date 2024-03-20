@@ -67,22 +67,22 @@ const Header = () => {
 
       <ul className={`hidden md:flex space-x-4 text-black mr-7 ${showIcons ? 'block' : 'hidden'}`}>
         <li>
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/mentarro/" target="_blank" rel="noopener noreferrer">
             <AiFillInstagram className="w-6 h-6 text-pink-600 hover:scale-105 duration-200" />
           </a>
         </li>
         <li>
-          <a href="mailto:example@example.com">
+          <a href="mailto:mentarro.in@gmail.com">
             <FiMail className="w-6 h-6 text-amber-800 hover:scale-105 duration-200" />
           </a>
         </li>
         <li>
-          <a href="tel:+1234567890">
+          <a href="tel:+91 9894404496">
             <FiPhone className="w-6 h-6 text-green-500 hover:scale-105 duration-200" />
           </a>
         </li>
         <li>
-          <a href="tel:+1234567890">
+          <a href="">
             <AiFillLinkedin className="w-6 h-6 text-blue-600 hover:scale-105 duration-200" />
           </a>
         </li>

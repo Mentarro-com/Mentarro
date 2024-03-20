@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import Header from "./components/Header/index";
 import Feature from "./components/Feature/feature";
@@ -5,6 +7,7 @@ import First from "./components/First/index";
 import Second from "./components/Second/index";
 import Marquee from "react-fast-marquee";
 import Parallax from "./components/Parallax/index";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -21,8 +24,9 @@ export default function Home() {
       <Feature />
       
       <Second />
-
+      <Contact />
       <Parallax />
+      
       
     </div>
   );
