@@ -1,31 +1,3 @@
-// import React from 'react'
-
-// const index = () => {
-//   return (
-//     <div className='py-8'>
-//       <div className="ml-9 mr-9 h-[620px] border border-neutral-600 rounded-xl mb-4 relative overflow-hidden">
-//         <video autoPlay loop muted className="absolute inset-0 object-cover w-full h-full  filter backdrop-blur-0">
-//           <source src="./second.mp4" type="video/mp4" />
-//           Your browser does not support the video tag.
-//         </video>
-//         <div className="absolute top-0 left-0 mb-4 ml-4 text-left text-white">
-//           <h1 className="text-slate-300"></h1>
-//           <div className="mt-24 ml-5">
-//             <button className="bg-blue-500 w-36 hover:bg-blue-700 text-white border-[3px] border-gray-300 font-bold py-2 px-4 rounded-2xl shadow-md transition duration-300 ease-in-out">
-//               Web Development
-//             </button>
-//             <h1 className="mt-2 p-2 text-3xl w-70 text-white font-semibold">
-//             Comprehensive web development solutions tailored to your needs.           
-//              </h1>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default index
-
 'use client'
 import React, { useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
@@ -54,7 +26,7 @@ const Index = () => {
   });
 
   return (
-    <div className='py-8' ref={ref}>
+    <div className='py-8 mt-36' ref={ref}>
       <div className="ml-9 mr-9 h-[620px] border border-neutral-600 rounded-xl mb-4 relative overflow-hidden">
         <video autoPlay loop muted className="absolute inset-0 object-cover w-full h-full filter backdrop-blur-0">
           <source src="./second.mp4" type="video/mp4" />

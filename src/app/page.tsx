@@ -1,18 +1,18 @@
 'use client'
 
-import Image from "next/image";
-import Header from "./components/Header/index";
 import Feature from "./components/Feature/feature";
 import First from "./components/First/index";
 import Second from "./components/Second/index";
 import Marquee from "react-fast-marquee";
 import Parallax from "./components/Parallax/index";
 import Contact from "./components/Contact";
+import Flip from "./components/Flip/index"
+import Techslider from "./components/Techslider/index";
+
 
 export default function Home() {
   return (
     <div className="bg-white">
-      <Header />
       <First />
       <div className="bg-black text-white font-extrabold text-3xl py-2">
         <Marquee pauseOnClick>
@@ -20,13 +20,14 @@ export default function Home() {
           text.
         </Marquee>
       </div>
-
-      <Feature />
       
+      <Feature />
+      <Parallax />
       <Second />
       <Contact />
-      <Parallax />
+      <Techslider />
       
+<Flip />
       
     </div>
   );

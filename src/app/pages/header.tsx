@@ -77,12 +77,12 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a href="tel:+91 9894404496">
+          <a href="tel:+919894404496">
             <FiPhone className="w-6 h-6 text-green-500 hover:scale-105 duration-200" />
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="https://www.linkedin.com/in/mentarro/">
             <AiFillLinkedin className="w-6 h-6 text-blue-600 hover:scale-105 duration-200" />
           </a>
         </li>
