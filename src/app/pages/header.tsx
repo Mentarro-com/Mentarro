@@ -22,7 +22,7 @@ const Header = () => {
     },
     {
       id: 3,
-      link: "Services",
+      link: "/pages/ServicePage",
     },
     {
       id: 4,
@@ -30,7 +30,7 @@ const Header = () => {
     },
     {
       id: 5,
-      link: "Contact",
+      link: "/pages/ContactPage",
     },
   ];
 
@@ -60,10 +60,15 @@ const Header = () => {
             key={id}
             className="nav-links px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200 link-underline"
           >
+            
             <Link href={link}>{link}</Link>
           </li>
         ))}
       </ul>
+
+
+
+
 
       <ul className={`hidden md:flex space-x-4 text-black mr-7 ${showIcons ? 'block' : 'hidden'}`}>
         <li>

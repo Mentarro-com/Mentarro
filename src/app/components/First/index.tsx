@@ -21,6 +21,7 @@ const MyComponent: React.FC = () => {
   const animationProps = useSpring({
     opacity: hasShownAnimation ? 1 : 0,
     transform: hasShownAnimation ? 'translateY(0)' : 'translateY(-80px)',
+    config: { duration: 500 }
   });
       
   return (
