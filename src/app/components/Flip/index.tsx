@@ -96,8 +96,8 @@ const FlippingCard = () => {
       <div className={`back ${isFlipped ? 'block' : 'hidden'}`}>Back of the Card</div>
       <style jsx>{`
         .card {
-          width: 320px;
-          height: 400px;
+          width: 300px;
+          height: 300px;
           margin: 10px;
           position: relative;
           transform-style: preserve-3d;
@@ -108,7 +108,7 @@ const FlippingCard = () => {
         }
 
         .card:hover {
-          transform: rotateY(-180deg); /* Flip from right to left on hover */
+          transform: rotateY(180deg); /* Flip from right to left on hover */
           box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
         }
 
