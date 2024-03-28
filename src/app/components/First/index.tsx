@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useState } from "react";
+import Marquee from "react-fast-marquee";
 import { animated, useSpring } from "react-spring";
 
 const MyComponent: React.FC = () => {
@@ -25,9 +26,10 @@ const MyComponent: React.FC = () => {
   });
       
   return (
+    <div>
     <div className="h-screen flex items-center justify-center">
       <video
-        className=" absolute inset-0 object-cover w-full h-full mt-20 "
+        className=" absolute inset-0 object-cover w-full h-[89%] mt-20 "
         autoPlay
         loop
         muted
@@ -52,6 +54,13 @@ const MyComponent: React.FC = () => {
       </div>
     </animated.div>
     </div>
+    <div className="bg-black text-white font-extrabold text-3xl py-2">
+    <Marquee pauseOnClick>
+      I can be a React component, multiple React components, or just some
+      text.
+    </Marquee>
+  </div> 
+  </div> 
     
   );
 };

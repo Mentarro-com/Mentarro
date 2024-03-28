@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import {
   FaFacebook,
@@ -9,12 +9,14 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { animated, useSpring } from "react-spring";
 
 const Footer: React.FC = () => {
+  
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-28">
           {/* Column 1 */}
           <div className="md:col-span-1">
             <Image
@@ -25,7 +27,7 @@ const Footer: React.FC = () => {
               className="bg-white rounded-lg"
             />
             <br />
-            <h2 className="text-lg font-semibold mb-4">About Us</h2>
+            <h2 className="text-lg font-semibold mb-4  text-red-600">About Us</h2>
             <p className="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -33,14 +35,14 @@ const Footer: React.FC = () => {
           </div>
           {/* Column 2 */}
           <div className="md:col-span-1">
-            <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
+            <h2 className="text-lg font-semibold mb-4  text-red-600">Contact Us</h2>
             <p className="text-sm">123 Street Name, City, Country</p>
             <p className="text-sm">info@example.com</p>
           </div>
           {/* Column 3 */}
           <div className="md:col-span-1">
-            <h2 className="text-lg font-semibold mb-4">Follow Us</h2>
-            <div className="flex space-x-4 text-[20px]">
+            <h2 className="text-lg font-semibold mb-4 text-red-600 ">Follow Us</h2>
+            <div className="flex space-x-4 text-[30px]">
               <a
                 href="mailto:mentarro.in@gmail.com"
                 target="_blank"
@@ -74,6 +76,15 @@ const Footer: React.FC = () => {
                 <FaWhatsapp />
               </a>
             </div>
+          </div>
+          {/* Column 4 */}
+          <div className="md:col-span-1">
+          <h2 className="text-lg font-semibold mb-4  text-red-600">Quick Links</h2>
+  <p className="text-sm mb-2 hover:text-slate-300"><a href="https://maps.google.com">Home</a></p>
+  <p className="text-sm mb-2 hover:text-slate-300"><a href="mailto:info@example.com">About</a></p>
+  <p className="text-sm mb-2 hover:text-slate-300"><a href="mailto:info@example.com">Services</a></p>
+  <p className="text-sm mb-2 hover:text-slate-300"><a href="mailto:info@example.com">Works</a></p>
+  <p className="text-sm mb-2 hover:text-slate-300"><a href="mailto:info@example.com">Contact</a></p>
           </div>
         </div>
       </div>

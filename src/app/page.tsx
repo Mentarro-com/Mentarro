@@ -14,13 +14,6 @@ export default function Home() {
   return (
     <div className="bg-white">
       <First />
-      <div className="bg-black text-white font-extrabold text-3xl py-2">
-        <Marquee pauseOnClick>
-          I can be a React component, multiple React components, or just some
-          text.
-        </Marquee>
-      </div>
-      
       <About />
       <Parallax />
       <Second />

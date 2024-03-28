@@ -35,7 +35,7 @@ function Index() {
   return (
     <div>
       <div className="bg-gray-900 py-20">
-        <div className="container mx-auto px-6 md:px-12 mt-[-60px]">
+        <div className="container mx-auto px-6 md:px-12 mt-[35px]">
           <div className="flex flex-col md:flex-row items-center">
             <animated.div className="md:w-1/2 lg:w-2/3" style={aboutAnimationProps}>
               <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6">

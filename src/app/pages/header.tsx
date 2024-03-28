@@ -203,7 +203,7 @@ const Header = () => {
       >
         <li>
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/mentarro/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -211,17 +211,17 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a href="mailto:example@example.com">
+          <a href="mailto:mentarro.in@gmail.com">
             <FiMail className="w-6 h-6 text-amber-800 hover:scale-105 duration-200" />
           </a>
         </li>
         <li>
-          <a href="tel:+1234567890">
+          <a href="tel:+919894404496">
             <FiPhone className="w-6 h-6 text-green-500 hover:scale-105 duration-200" />
           </a>
         </li>
         <li>
-          <a href="tel:+1234567890">
+          <a href="https://www.linkedin.com/in/mentarro/">
             <AiFillLinkedin className="w-6 h-6 text-blue-600 hover:scale-105 duration-200" />
           </a>
         </li>
