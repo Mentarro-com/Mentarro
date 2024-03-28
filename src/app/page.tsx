@@ -27,7 +27,6 @@ export default function Home() {
       <Contact />
       <Techslider />
       <Flip />
-      
     </div>
   );
 }

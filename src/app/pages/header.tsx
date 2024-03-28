@@ -159,7 +159,9 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white nav z-50">
+    <div>
+      
+    <div className="flex fixed justify-between items-center w-full h-20 px-4 bg-white text-white nav z-50">
       <div className="text-5xl font-signature ml-2">
         <Image
           src="/logo.png"
@@ -237,20 +239,9 @@ const Header = () => {
             </li>
           ))}
         </ul>
-      //   <ul
-      //   className={`md:flex-col border border-black p-3 fixed ml-[35%] z-50 bg-white rounded-full `}
-      // >
-      //   {links.map(({ id, link }) => (
-      //     <li
-      //       key={id}
-      //       className="nav-links px-4 cursor-pointer capitalize font-medium text-black hover:scale-105 duration-200 link-underline"
-      //     >
-      //       <Link href={link}>{link}</Link>
-      //     </li>
-      //   ))}
-      // </ul>
       )}
     </div>
+</div>
   );
 };
 
