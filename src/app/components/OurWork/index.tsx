@@ -3,44 +3,38 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { animated, useSpring } from "react-spring";
 function index() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+  
   const [isVisible, setIsVisible] = useState(false);
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const first = useSpring({
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateX(0%)' : 'translateX(-100%)',
     config: { duration: 500 }
   });
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const second = useSpring({
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateX(0%)' : 'translateY(-100%)',
     config: { duration: 500 }
   });
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const third = useSpring({
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateX(0%)' : 'translateY(100%)',
     config: { duration: 500 }
   });
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const fourth = useSpring({
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateX(0%)' : 'translateX(100%)',
     config: { duration: 500 }
   });
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      const targetPosition = windowHeight * 0.85; // 25% of viewport height
-
+      const targetPosition = windowHeight * 0.85; 
       if (scrollPosition > targetPosition) {
         setIsVisible(true);
       } else {

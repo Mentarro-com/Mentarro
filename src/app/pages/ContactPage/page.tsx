@@ -1,7 +1,41 @@
-import React from "react";
-import Image from 'next/image'
- 
-function index() {
+"use client"
+import React, { useEffect, useState } from "react";
+import { animated, useSpring } from "react-spring";
+function index() 
+{
+  const [isVisible, setIsVisible] = useState(false);
+
+  const phone= useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? 'translateX(0%)' : 'translateX(-100%)',
+    config: { duration: 200 }
+  });
+
+  const second = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? 'translateX(0%)' : 'translateX(100%)',
+    config: { duration: 200 }
+  });
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const targetPosition = windowHeight * 0.45; 
+
+      if (scrollPosition > targetPosition) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
     <div>
       <section className="bg-gray-100">
@@ -56,7 +90,9 @@ function index() {
       </section>
 
       <div>
+      
         <div className="sm:flex items-center max-w-screen-xl">
+        <animated.div style={phone}>
           <div className="sm:w-1/2 p-10">
             <div className="image object-center text-center lg:ml-36">
                 <div
@@ -73,6 +109,9 @@ function index() {
               </div>
             </div>
           </div>
+          </animated.div>
+
+          <animated.div style={second}>
           <div className="sm:w-1/2 p-5">
             <div className="text">
               <span className="text-slate-700 text-xl border-b-2 border-pink-600 uppercase">
@@ -86,9 +125,10 @@ function index() {
               </h1>
             </div>
           </div>
+          </animated.div>
         </div>
-        
       </div>
+
     </div>
   );
 }
