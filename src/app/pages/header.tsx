@@ -134,7 +134,7 @@ const Header = () => {
     },
     {
       id: 2,
-      link: "About",
+      link: "/pages/AboutPage",
       text: "About",
     },
     {
