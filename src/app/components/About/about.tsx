@@ -50,10 +50,8 @@ const YourComponent: React.FC = () => {
           <animated.div style={content}>
             <div className="max-w-lg ml-14">
                 <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">About Us</h2>
-                <p className="mt-4 text-gray-600 text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-                    eros at lacus feugiat hendrerit sed ut tortor. Suspendisse et magna quis elit efficitur consequat.
-                    Mauris eleifend velit a pretium iaculis. Donec sagittis velit et magna euismod, vel aliquet nulla
-                    malesuada. Nunc pharetra massa lectus, a fermentum arcu volutpat vel.</p>
+                <p className="mt-4 text-gray-600 text-lg">Welcome to Mentarro, a digital space dedicated to fostering connections, promoting collaboration, and empowering individuals to thrive within a vibrant community ecosystem. 
+At Mentarro, we believe in the power of unity, diversity, and shared experiences. Our platform serves as a dynamic hub where people from all walks of life can come together, exchange ideas, and embark on meaningful journeys of personal and collective growth.</p>
                 <div className="mt-8">
                 <Link href="#" className="text-blue-500 hover:text-blue-600 font-medium">
 Learn more about us

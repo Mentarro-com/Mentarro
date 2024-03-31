@@ -35,13 +35,21 @@ const Index = () => {
         <div className="absolute top-0 left-0 mb-4 ml-4 text-left text-white">
           <h1 className="text-slate-300"></h1>
           <div className="mt-24 ml-5">
-            <animated.button ref={buttonRef} style={buttonAnimationProps} className="bg-blue-500 w-36 hover:bg-blue-700 text-white border-[3px] border-gray-300 font-bold py-2 px-4 rounded-2xl shadow-md transition duration-300 ease-in-out">
-              Web Development
-            </animated.button>
-            <animated.h1 ref={headingRef} style={headingAnimationProps} className="mt-2 p-2 text-3xl w-70 text-white font-semibold">
-              Comprehensive web development solutions tailored to your needs.
-            </animated.h1>
-          </div>
+      <animated.button
+        ref={buttonRef}
+        style={buttonAnimationProps}
+        className="bg-blue-500 w-36 hover:bg-blue-700 text-white border-[3px] border-gray-300 font-bold py-2 px-4 rounded-2xl shadow-md transition duration-300 ease-in-out"
+      >
+        App Crafting
+      </animated.button>
+      <animated.h1
+        ref={headingRef}
+        style={headingAnimationProps}
+        className="mt-2 p-2 text-3xl w-70 text-white font-bold serif"
+      >
+        As pioneers in the field of digital community development, Mentarro is renowned for its unwavering dedication to crafting unparalleled online experiences.
+      </animated.h1>
+    </div>
         </div>
       </div>
     </div>

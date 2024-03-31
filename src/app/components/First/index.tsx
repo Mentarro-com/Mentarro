@@ -54,12 +54,11 @@ const MyComponent: React.FC = () => {
       </div>
     </animated.div>
     </div>
-    <div className="bg-black text-white font-extrabold text-3xl py-2">
+    {/* <div className="bg-black text-white font-extrabold text-3xl py-2">
     <Marquee pauseOnClick>
-      I can be a React component, multiple React components, or just some
-      text.
+    Welcome to Mentarro – where connections are made, collaborations flourish, and communities thrive.
     </Marquee>
-  </div> 
+  </div>  */}
   </div> 
     
   );
