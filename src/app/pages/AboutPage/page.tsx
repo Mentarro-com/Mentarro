@@ -215,7 +215,7 @@ function page() {
                 for me, no matter what project I'm working on."
               </p>
               <p className="text-gray-700 font-medium">
-                - Bob Johnson, Developer
+                - Singam Suriya, Developer
               </p>
             </div>
           </div>
