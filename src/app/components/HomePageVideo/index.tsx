@@ -9,12 +9,11 @@ const MyComponent: React.FC = () => {
     const [hasShownAnimation, setHasShownAnimation] = useState<boolean>(false);
   
   useEffect(() => {
-    // Check local storage to see if the animation has been shown before
+   
     const hasShownBefore = localStorage.getItem('hasShownAnimation');
     if (hasShownBefore) {
       setHasShownAnimation(true);
     } else {
-      // If not, set local storage to indicate that the animation has been shown
       localStorage.setItem('hasShownAnimation', 'true');
     }
   }, []);

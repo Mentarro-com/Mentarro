@@ -14,19 +14,17 @@ const TechStackMarquee: React.FC = () => {
 
     const items = container.querySelectorAll('.tech-item');
 
-    // Calculate total width of all items
     let totalWidth = 0;
     items.forEach(item => {
       totalWidth += item.clientWidth;
     });
 
-    // Clone items to create continuous loop
     const clonedItems = Array.from(items).map(item => item.cloneNode(true) as HTMLElement);
     clonedItems.forEach(clonedItem => {
       container.appendChild(clonedItem);
     });
 
-    // Animate the scrolling
+
     let animationFrame: number;
     let scrollAmount = 0;
     const scroll = () => {
