@@ -8,6 +8,7 @@ import ContactForm from "@/app/components/ContactForm";
 import Techslider from "@/app/components/Techslider/index";
 import FlipCard from "@/app/components/FlipCard/index";
 import Marquee from "react-fast-marquee";
+import ServiceVideo from "@/app/components/ServiceVideo";
 
 export default function Home() {
     return (

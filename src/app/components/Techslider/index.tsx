@@ -1,5 +1,3 @@
-// TechStackMarquee.tsx
-
 import React, { useEffect, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
 import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaAws } from 'react-icons/fa';

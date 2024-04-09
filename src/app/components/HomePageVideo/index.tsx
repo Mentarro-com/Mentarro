@@ -27,16 +27,7 @@ const MyComponent: React.FC = () => {
   return (
     <div>
     <div className="h-screen flex items-center justify-center">
-      <video
-        className=" absolute inset-0 object-cover w-full h-[89%] mt-20 "
-        autoPlay
-        loop
-        muted
-      >
-        <source src="./video1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
+      
 <animated.div
       className="relative z-10 max-w-md mx-auto bg-white bg-opacity-75 p-8 rounded-lg shadow-lg"
       style={animationProps}
@@ -50,8 +41,27 @@ const MyComponent: React.FC = () => {
         <div className="absolute bottom-0 right-0 transform translate-x-2 translate-y-2 lg:translate-x-4 lg:translate-y-4 text-3xl lg:text-5xl">
           &rdquo;
         </div>
+      </div> 
+  </animated.div>
+
+    <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+        <video className="min-w-full min-h-full absolute object-cover "
+          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+          autoPlay muted loop></video>
       </div>
-    </animated.div>
+
+      <style jsx>{`
+        .video-docker::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.6);
+          z-index: 1;
+        }
+      `}</style>
     </div>
     {/* <div className="bg-black text-white font-extrabold text-3xl py-2">
     <Marquee pauseOnClick>

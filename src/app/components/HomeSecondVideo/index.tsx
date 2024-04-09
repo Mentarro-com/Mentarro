@@ -10,10 +10,10 @@ const Index = () => {
 
   const buttonAnimationProps = useSpring({
     opacity: inView ? 1 : 0,
-    marginTop: inView ? 0 : -100, // Adjust this value for initial position
-    from: { opacity: 0, marginTop: -100 }, // Adjust this value for initial position
+    marginTop: inView ? 0 : -100, 
+    from: { opacity: 0, marginTop: -100 }, 
     config: { duration: 1000 },
-    delay: 1000 // 1 second delay
+    delay: 1000 
   });
   
 
@@ -22,7 +22,7 @@ const Index = () => {
     transform: inView ? 'translateX(0)' : 'translateX(100px)',
     from: { opacity: 0, transform: 'translateX(100px)' },
     config: { duration: 1000 },
-    delay: 1000 // 1 second delay
+    delay: 1000 
   });
 
   return (
