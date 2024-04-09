@@ -3,10 +3,11 @@
 import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 import { animated, useSpring } from "react-spring";
+import Image from "next/image";
 
 const MyComponent: React.FC = () => {
 
-    const [hasShownAnimation, setHasShownAnimation] = useState<boolean>(false);
+    const [hasShownAnimtion, setHasShownAnimation] = useState<boolean>(false);
   
   useEffect(() => {
    
@@ -19,8 +20,8 @@ const MyComponent: React.FC = () => {
   }, []);
 
   const animationProps = useSpring({
-    opacity: hasShownAnimation ? 1 : 0,
-    transform: hasShownAnimation ? 'translateY(0)' : 'translateY(-80px)',
+    opacity: hasShownAnimtion ? 1 : 0,
+    transform: hasShownAnimtion ? 'translateY(0)' : 'translateY(-80px)',
     config: { duration: 500 }
   });
       
@@ -46,10 +47,9 @@ const MyComponent: React.FC = () => {
 
     <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
         <video className="min-w-full min-h-full absolute object-cover "
-          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
+          src="/video1.mp4"
           autoPlay muted loop></video>
       </div>
-
       <style jsx>{`
         .video-docker::after {
           content: "";
