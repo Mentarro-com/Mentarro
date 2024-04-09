@@ -47,7 +47,7 @@ const MyComponent: React.FC = () => {
 
     <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
         <video className="min-w-full min-h-full absolute object-cover "
-          src="/video1.mp4"
+          src="/intro.mp4"
           autoPlay muted loop></video>
       </div>
       <style jsx>{`
