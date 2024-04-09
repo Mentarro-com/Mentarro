@@ -157,9 +157,7 @@ function page() {
                 Jenny Carter
               </h2>
               <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
+                
               </p>
 
               <p className="mt-4 text-xl text-gray-600 md:mt-8">
