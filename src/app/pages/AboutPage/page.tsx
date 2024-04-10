@@ -24,9 +24,9 @@ function page() {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
       const targetPositionFirst = windowHeight * 0.5;
-      const targetPositionSecond = windowHeight * 1;
-      const targetPositionThird = windowHeight * 1.5;
-      const targetPositionFourth = windowHeight * 2;
+      const targetPositionSecond = windowHeight * 0.9;
+      const targetPositionThird = windowHeight * 1.3;
+      const targetPositionFourth = windowHeight * 1.7;
       setIsVisibleFirst(scrollPosition > targetPositionFirst);
       setIsVisibleSecond(scrollPosition > targetPositionSecond);
       setIsVisibleThird(scrollPosition > targetPositionThird);
@@ -109,40 +109,24 @@ function page() {
 
   const [isVisible, setIsVisible] = useState(false);
 
-  const firstreview = useSpring({
+  const aboutus = useSpring({
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateX(0%)' : 'translateX(-100%)',
     config: { duration: 500 }
   });
 
-  const secondreview = useSpring({
+  const aboutpara = useSpring({
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateX(0%)' : 'translateY(-100%)',
-    config: { duration: 500 }
-  });
-
-  const thirdreview = useSpring({
-    opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateX(0%)' : 'translateY(100%)',
-    config: { duration: 500 }
+    config: { duration: 400 }
   });
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const targetPosition = windowHeight * 3.2;
-      if (scrollPosition > targetPosition) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
+    const timeout = setTimeout(() => {
+      setIsVisible(true);
+    }, 400);
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
@@ -150,15 +134,19 @@ function page() {
       <section className="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16 ">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl ">
           <div className="grid items-center grid-cols-1 md:grid-cols-2 mt-[-45px]">
-            <div>
+            <div className="mt-32">
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-              About Us
+             <animated.div style={aboutus}>          
+             <span className="text-red-600">About</span> Us
+             </animated.div>
                 <br className="block sm:hidden" />
                 
               </h2>
+              <animated.div style={aboutpara}>
               <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">      
 "At Mentarro, we're not just a company; we're a digital force, cutting through the clutter with our dynamic team of trend-savvy experts. Founded by a visionary entrepreneur, we're here to revolutionize your online presence. With our relentless pursuit of excellence and a knack for innovation, we craft bespoke websites and game-changing ideas that propel your business to the forefront of your industry. Say goodbye to outdated methods and hello to a vibrant online future with Mentarro."
               </p>
+              </animated.div>
 
               <p className="mt-4 text-xl text-gray-600 md:mt-8">
                 <span className="relative inline-block">
@@ -195,14 +183,14 @@ function page() {
 
       <div className="text-center p-12 mb-9">
         <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-          Why to choose US?
+          <span className="text-red-600">Why to </span>choose US?
         </h2>
 
         <animated.div style={first}>
           <div className="flex flex-wrap items-center mt-20 text-left text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
               <img
-                src="https://picsum.photos/400/240"
+                src="/about1.jpeg"
                 alt="gem"
                 className="inline-block rounded shadow-lg border border-merino-400"
               />
@@ -222,7 +210,7 @@ function page() {
           <div className="flex flex-wrap items-center mt-20 text-left text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
               <img
-                src="https://picsum.photos/400/240"
+                src="/about2.jpeg"
                 alt="project members"
                 className="inline-block rounded shadow-lg border border-merino-400"
               />
@@ -242,7 +230,7 @@ function page() {
           <div className="flex flex-wrap items-center mt-20 text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
               <img
-                src="https://picsum.photos/400/240"
+                src="/about3.jpeg"
                 alt="editor"
                 className="inline-block rounded shadow-lg border border-merino-400"
               />
@@ -262,7 +250,7 @@ function page() {
           <div className="flex flex-wrap items-center mt-20 text-left text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
               <img
-                src="https://picsum.photos/400/240"
+                src="/about4.jpeg"
                 alt="bulk editing"
                 className="inline-block rounded shadow-lg border border-merino-400"
               />
@@ -337,20 +325,17 @@ function page() {
 
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-8">What our users are saying</h2>
+          <h2 className="text-4xl font-bold mb-8 text-red-400">What our users are saying</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <animated.div style={firstreview}>
-              <div className="bg-white shadow rounded-lg p-8">
+              <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
                 <p className="text-gray-700 mb-4">
                   "This app has been a game changer for me! I highly recommend it
                   to anyone looking to streamline their workflow."
                 </p>
                 <p className="text-gray-700 font-medium">- John Doe, CEO</p>
               </div>
-            </animated.div>
 
-            <animated.div style={secondreview}>
-              <div className="bg-white shadow rounded-lg p-8">
+              <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
                 <p className="text-gray-700 mb-4">
                   "I've tried a lot of different apps, but this one really stands
                   out. It's so easy to use, and the features are exactly what I
@@ -360,10 +345,8 @@ function page() {
                   - Jane Smith, Designer
                 </p>
               </div>
-            </animated.div>
 
-            <animated.div style={thirdreview}>
-              <div className="bg-white shadow rounded-lg p-8">
+              <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
                 <p className="text-gray-700 mb-4">
                   "I love how customizable this app is. I can really make it work
                   for me, no matter what project I'm working on."
@@ -372,7 +355,6 @@ function page() {
                   - Singam Suriya, Developer
                 </p>
               </div>
-            </animated.div>
 
           </div>
         </div>

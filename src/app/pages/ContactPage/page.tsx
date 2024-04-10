@@ -39,8 +39,8 @@ function index() {
     <div>
       <section className="bg-gray-100">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-          <div className="max-w-2xl lg:max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">
+          <div className="max-w-2xl mt-9 lg:max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl mt-9 font-extrabold text-gray-900">
               Visit Our Location
             </h2>
             <p className="mt-4 text-lg text-gray-500">
@@ -88,7 +88,7 @@ function index() {
         </div>
       </section>
 
-      <div className="flex justify-center mr-9">
+      <div className="flex justify-center mr-12">
         <div className="sm:flex items-center max-w-screen-xl ml-[20%]">
           <animated.div style={phone}>
             <div className="sm:w-1/2 p-10">

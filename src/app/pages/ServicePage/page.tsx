@@ -40,7 +40,7 @@ function Index() {
             <animated.div className="md:w-1/2 lg:w-2/3" style={aboutAnimationProps}>
               <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6">
                 Welcome to our <br className="hidden md:block" />
-                <span className="text-indigo-500">Awesome</span> Website
+                <span className="text-red-600">Awesome</span> Website
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8">
                 We create beautiful and functional websites for businesses of all
