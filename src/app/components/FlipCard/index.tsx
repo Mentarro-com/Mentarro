@@ -92,7 +92,7 @@ const FlippingCard = () => {
 
   return (
     <div className="card" onClick={handleFlip}>
-      <div className={`front ${isFlipped ? 'hidden' : 'block'}`}>Front of the Card</div>
+      <div className={`front ${isFlipped ? 'hidden' : 'block'}`}>App Crafing</div>
       <div className={`back ${isFlipped ? 'block' : 'hidden'}`}>Back of the Card</div>
       <style jsx>{`
         .card {

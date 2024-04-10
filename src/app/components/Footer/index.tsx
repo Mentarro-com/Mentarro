@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             <div className="text-center">
               <h2 className="text-lg font-semibold mb-2 text-red-600">About Us</h2>
               <p className="text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We create websites tailored to your business, transforming your vision into reality and launching your business into the digital world.
               </p>
             </div>
           </div>

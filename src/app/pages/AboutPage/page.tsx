@@ -152,12 +152,12 @@ function page() {
           <div className="grid items-center grid-cols-1 md:grid-cols-2">
             <div>
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-                Hey 👋 I am
+              About Us
                 <br className="block sm:hidden" />
-                Jenny Carter
-              </h2>
-              <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
                 
+              </h2>
+              <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">      
+"At Mentarro, we're not just a company; we're a digital force, cutting through the clutter with our dynamic team of trend-savvy experts. Founded by a visionary entrepreneur, we're here to revolutionize your online presence. With our relentless pursuit of excellence and a knack for innovation, we craft bespoke websites and game-changing ideas that propel your business to the forefront of your industry. Say goodbye to outdated methods and hello to a vibrant online future with Mentarro."
               </p>
 
               <p className="mt-4 text-xl text-gray-600 md:mt-8">
@@ -209,12 +209,10 @@ function page() {
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
               <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-                Simple integration
+              Tailored Career and Goal Setting Solutions
               </h3>
               <p className="sm:text-lg mt-6">
-                Use the LocaleData gem to download translations directly into your
-                Ruby on Rails projects using the provided command line interface.
-                Just create a project and follow the step-by-step instructions.
+              At Mentarro, we recognize that everyone's career journey is distinct. That's why we provide tailored career and goal setting solutions, designed to match your aspirations and ambitions. Whether you're seeking advancement, skill enhancement, or personal growth, our strategies keep you on the path to success.
               </p>
             </div>
           </div>
@@ -231,14 +229,10 @@ function page() {
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
               <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-                Easy collaboration
+              Strategic Planning Expertise
               </h3>
               <p className="sm:text-lg mt-6">
-                All LocaleData projects are private. Each project can have
-                multiple collaborators with different roles and access
-                permissions. You determine who can see and edit your translations.
-                Just add admins, developers, translators and configure their
-                access rights.
+              Strategic planning is the bedrock of success for any venture. At Mentarro, we excel in crafting bespoke strategies perfectly attuned to your unique needs and objectives. Our seasoned strategists work hand-in-hand with you to uncover opportunities, navigate risks, and pave the way for sustainable growth and triumph. Let's chart your course to success together.
               </p>
             </div>
           </div>
@@ -255,14 +249,10 @@ function page() {
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
               <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-                No more syntax errors
+              Customizable App Development Solutions
               </h3>
               <p className="sm:text-lg mt-6">
-                LocaleData provides you easy import/export functions for your YAML
-                files. Use a simple editor with many predefined languages to
-                manage your locales. LocaleData also supports multiple translation
-                types, such as simple text, plural forms, numbers, booleans,
-                symbols, arrays, ...
+              In today's digital age, a standout app is your ticket to staying ahead in the competition. At Mentarro, we don't just offer app development solutions; we craft experiences that resonate with your brand. From ideation to launch, our skilled developers harness the latest tech to deliver apps that captivate users and yield tangible results. Let's turn your vision into a digital reality that sets you apart.
               </p>
             </div>
           </div>
@@ -279,12 +269,10 @@ function page() {
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
               <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-                Bulk editing
+              Dedicated Support
               </h3>
               <p className="sm:text-lg mt-6">
-                Do you need to change the path of many translation keys at once?
-                No problem, just use the bulk editing feature and enjoy the
-                results.
+              At Mentarro, your success is our top priority. We provide dedicated support every step of the way, ensuring that you have the guidance, resources, and expertise needed to achieve your goals. From initial consultation to ongoing support and optimization, we're committed to your success.
               </p>
             </div>
           </div>

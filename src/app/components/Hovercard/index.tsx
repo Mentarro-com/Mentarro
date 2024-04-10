@@ -24,8 +24,7 @@ function Index() {
             </span>
             <div className="space-y-6 text-base leading-7 text-gray-600">
               <p>
-                Perfect for learning how the framework works, prototyping a new
-                idea, or creating a demo to share online.
+              "Empowering individuals to define their career aspirations and set actionable goals for personal and professional growth
               </p>
             </div>
             <div className="pt-5 text-base font-semibold leading-7">
