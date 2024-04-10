@@ -90,19 +90,19 @@ function page() {
   }, [inViewFirst, inViewSecond, inViewThird]);
 
   const { number: numberFirst } = useSpring({
-    number: animateFirst ? 30 : 0,
+    number: animateFirst ? 65 : 0,
     from: { number: 0 },
     config: { duration: 1500 },
   });
 
   const { number: numberSecond } = useSpring({
-    number: animateSecond ? 100 : 0,
+    number: animateSecond ? 4: 0,
     from: { number: 0 },
     config: { duration: 1500 },
   });
 
   const { number: numberThird } = useSpring({
-    number: animateThird ? 10 : 0,
+    number: animateThird ? 2 : 0,
     from: { number: 0 },
     config: { duration: 1500 },
   });
@@ -155,25 +155,21 @@ function page() {
                 <br className="block sm:hidden" />
                 Ask me on{" "}
                 <a
-                  href="#"
-                  title=""
-                  className="transition-all duration-200 text-sky-500 hover:text-sky-600 hover:underline"
+                  href="https://www.instagram.com/mentarro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-200 text-pink-500 hover:text-pink-600 hover:underline"
                 >
-                  Twitter
+                  Instagram
                 </a>
               </p>
             </div>
 
             <div className="relative">
-              <img
-                className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg"
-                alt=""
-              />
-
+              
               <img
                 className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png"
+                src="/about_top.jpeg"
                 alt=""
               />
             </div>
@@ -187,7 +183,7 @@ function page() {
         </h2>
 
         <animated.div style={first}>
-          <div className="flex flex-wrap items-center mt-20 text-left text-center">
+          <div className="flex flex-wrap items-center mt-20  text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
               <img
                 src="/about1.jpeg"
@@ -207,7 +203,7 @@ function page() {
         </animated.div>
 
         <animated.div style={second}>
-          <div className="flex flex-wrap items-center mt-20 text-left text-center">
+          <div className="flex flex-wrap items-center mt-20 text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
               <img
                 src="/about2.jpeg"
@@ -247,7 +243,7 @@ function page() {
         </animated.div>
 
         <animated.div style={fourth}>
-          <div className="flex flex-wrap items-center mt-20 text-left text-center">
+          <div className="flex flex-wrap items-center mt-20  text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
               <img
                 src="/about4.jpeg"
@@ -272,7 +268,7 @@ function page() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-5xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-              The Ultimate Data Analytics Platform
+              The Ultimate Guidance Provider Oraganization
             </h2>
           </div>
         </div>
@@ -284,7 +280,7 @@ function page() {
                 <dl className="rounded-lg bg-white dark:bg-gray-800 shadow-lg sm:grid sm:grid-cols-3">
                   <div className="flex flex-col border-b border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-r">
                     <dt className="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">
-                      Data Sources, including APIs and databases
+                      Instagram Followers
                     </dt>
 
                     <div className="target-component" ref={refFirst}>
@@ -296,7 +292,7 @@ function page() {
                   </div>
                   <div className="flex flex-col border-t border-b border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                     <dt className="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">
-                      Analytic Tools and Machine Learning Models
+                      Developed Websites
                     </dt>
                     <div className="target-component" ref={refSecond}>
                       <animated.dd className="order-1 text-5xl font-bold tracking-tight text-green-600 dark:text-green-400">
@@ -307,7 +303,7 @@ function page() {
                   </div>
                   <div className="flex flex-col border-t border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l">
                     <dt className="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">
-                      Real-time Data Streams and Dashboards
+                      Real-time Presented Guidance Program
                     </dt>
                     <div className="target-component" ref={refThird}>
                       <animated.dd className="order-1 text-5xl font-bold tracking-tight text-green-600 dark:text-green-400">
@@ -329,30 +325,26 @@ function page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
                 <p className="text-gray-700 mb-4">
-                  "This app has been a game changer for me! I highly recommend it
-                  to anyone looking to streamline their workflow."
+                  "Being new to the field, I was thrilled to discover this organization. Their AI learning path is incredibly accessible, breaking down complex concepts into manageable steps. The guidance on interacting with AI is practical and hands-on, making it easy to apply in real-world scenarios. I'm grateful for the opportunity to learn and grow with such a supportive community!".
                 </p>
-                <p className="text-gray-700 font-medium">- John Doe, CEO</p>
+                <p className="text-gray-700 font-medium">- Junior</p>
               </div>
 
               <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
                 <p className="text-gray-700 mb-4">
-                  "I've tried a lot of different apps, but this one really stands
-                  out. It's so easy to use, and the features are exactly what I
-                  need."
+                "I'm delighted to witness the inception of this remarkable new organization!I am confident that this venture will inspire and enable countless individuals to realize their aspirations, propelling them toward unparalleled achievements. Here's to a journey filled with triumphs and transformative impact!"
                 </p>
                 <p className="text-gray-700 font-medium">
-                  - Jane Smith, Designer
+                - Well Wisher
                 </p>
               </div>
 
               <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
                 <p className="text-gray-700 mb-4">
-                  "I love how customizable this app is. I can really make it work
-                  for me, no matter what project I'm working on."
+                "Their approach to AI education and career guidance is nothing short of exemplary.They're equipping students with essential skills for the future. I have no doubt that their commitment to excellence will cultivate a new generation of knowledgeable and skilled professionals. I eagerly anticipate the positive impact this organization will have on the educational landscape and beyond."
                 </p>
                 <p className="text-gray-700 font-medium">
-                  - Singam Suriya, Developer
+                  - Teacher
                 </p>
               </div>
 

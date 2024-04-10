@@ -2,6 +2,7 @@
 import React, { useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
+import Link from 'next/link';
 
 const Index = () => {
   const [ref, inView] = useInView();
@@ -40,7 +41,11 @@ const Index = () => {
         style={buttonAnimationProps}
         className="bg-blue-500 w-36 hover:bg-blue-700 text-white border-[3px] border-gray-300 font-bold py-2 px-4 rounded-2xl shadow-md transition duration-300 ease-in-out"
       >
-        App Crafting
+        <Link href="/pages/ServicePage" >
+                     
+        App Crafting          
+        </Link>
+        
       </animated.button>
       <animated.h1
         ref={headingRef}

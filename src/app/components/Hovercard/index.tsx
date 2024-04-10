@@ -1,5 +1,11 @@
 import React from 'react';
-function Index() {
+
+interface Data {
+  description: string;
+  
+}
+
+function Index({ data }: { data: Data }) {
   return (
     <div className="flex items-center justify-center py-6 sm:py-12">
       <div className="w-full sm:max-w-sm">
@@ -24,7 +30,7 @@ function Index() {
             </span>
             <div className="space-y-6 text-base leading-7 text-gray-600">
               <p>
-              "Empowering individuals to define their career aspirations and set actionable goals for personal and professional growth
+                {data.description}
               </p>
             </div>
             <div className="pt-5 text-base font-semibold leading-7">

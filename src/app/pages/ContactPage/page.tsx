@@ -37,17 +37,17 @@ function index() {
 
   return (
     <div>
-      <section className="bg-gray-100">
+      <section className="bg-gray-100 mt-[-100px]">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
           <div className="max-w-2xl mt-9 lg:max-w-4xl mx-auto text-center">
             <h2 className="text-3xl mt-9 font-extrabold text-gray-900">
               Visit Our Location
             </h2>
             <p className="mt-4 text-lg text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Available in both mode
             </p>
           </div>
-          <div className="mt-16 lg:mt-20">
+          <div className="mt-14 lg:mt-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="rounded-lg overflow-hidden">
                 <iframe
@@ -124,6 +124,30 @@ function index() {
           </animated.div>
         </div>
       </div>
+
+      <div className=" bg-gray-500 py-6 flex flex-col  sm:py-12">
+        <div className="relative py-3 sm:max-w-xl sm:mx-auto">
+          <div className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
+          <div className="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">
+            <div className="text-center pb-6">
+              <h1 className="text-3xl">Contact Us!</h1>
+              <p className="text-gray-300 mb-6">
+                Click and Fill up the form below to send us a message.
+              </p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScVCbRTwx_ysF-2oHod9aDr1-6EEk8lSinc52__FMMbj4znbQ/viewform?usp=sf_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative  text-black text-4xl hover:text-red-500 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+              >
+                Mentarro Form
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   );
 }

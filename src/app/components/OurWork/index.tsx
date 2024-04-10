@@ -92,10 +92,10 @@ function index() {
                 />
                 <div className="space-y-2">
                   <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">
-                    Xyz.com
+                    Business Website
                   </h5>
                   <p className="text-gray-300">
-                    Platform to convert Domains into Content websites.
+                    Platform to Business into Content websites.
                   </p>
                 </div>
               </div>
@@ -113,10 +113,10 @@ function index() {
                 />
                 <div className="space-y-2">
                 <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">
-                  ABC.com
+                  Carrer Guidance
                 </h5>
                 <p className="text-gray-300">
-                  Platform to create dynamic widgets for websites.
+                  Provide a carrer learning path to freshers.
                 </p>
                 </div>
               </div>
@@ -134,10 +134,10 @@ function index() {
                 />
                 <div className="space-y-2">
                 <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">
-                  ABC.com
+                  General Website
                 </h5>
                 <p className="text-gray-300">
-                  Platform to create dynamic widgets for websites.
+                  Here we transfer needs of the client into the outcome 
                 </p>
                 </div>
               </div>
@@ -154,8 +154,8 @@ function index() {
                   className="w-12 h-12 rounded-full"
                 />
           <div className="space-y-2">
-            <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">TMK.co</h5>
-            <p className="text-gray-300">Chrome Extension that lets you add ChatGPT on any website</p>
+            <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">AI Tech Path</h5>
+            <p className="text-gray-300">Learn to interact and integrate AI into application</p>
           </div>
         </div>
       </div>

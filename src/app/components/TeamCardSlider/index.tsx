@@ -2,12 +2,17 @@ import React, { useState, useEffect } from "react";
 import Card from "../Card/index";
 import bgCard from "../../../../public/bg-pattern-card.svg";
 import idCard from "../../../../public/logith.jpg";
+import logith from "../../../../public/logith.jpg";
+import lokesh from "../../../../public/lokesh.jpeg";
+import jeevan from "../../../../public/jeevan.jpeg";
+import haresh from "../../../../public/haresh.jpeg";
+import siva from "../../../../public/siva.png";
 
 const TestimonialSlider: React.FC = () => {
   const cardData = [
     {
       bgCardSrc: bgCard,
-      idCardSrc: idCard,
+      idCardSrc: logith,
       name: "Logith Ramesh",
       age: "21",
       location: "Chennai",
@@ -16,7 +21,7 @@ const TestimonialSlider: React.FC = () => {
     },
     {
       bgCardSrc: bgCard,
-      idCardSrc: idCard,
+      idCardSrc: lokesh,
       name: "Lokesh Kumar",
       age: "21",
       location: "Chennai",
@@ -34,7 +39,7 @@ const TestimonialSlider: React.FC = () => {
     },
     {
       bgCardSrc: bgCard,
-      idCardSrc: idCard,
+      idCardSrc: jeevan,
       name: "Jeevan",
       age: "21",
       location: "Chennai",
@@ -52,12 +57,21 @@ const TestimonialSlider: React.FC = () => {
     },
     {
       bgCardSrc: bgCard,
-      idCardSrc: idCard,
+      idCardSrc: haresh,
       name: "Haresh",
       age: "21",
       location: "Chennai",
       instagramLink: "https://www.instagram.com/harxsh.03",
       linkedinLink: "https://www.linkedin.com/in/victor_crest",
+    },
+    {
+      bgCardSrc: bgCard,
+      idCardSrc: siva,
+      name: "Siva",
+      age: "21",
+      location: "Chennai",
+      instagramLink: "https://www.instagram.com/ngc1889_siva?igsh=YWsxOWJ6ZzZqdGEx",
+      linkedinLink: "https://www.linkedin.com/in/siva-sangaran-b26b95202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   ];
 
@@ -75,11 +89,11 @@ const TestimonialSlider: React.FC = () => {
 
   return (
     <div className="relative h-[400px] bg-fixed">
-      <h1 className="text-center text-2xl mb-4">Our Team</h1>
+      <h1 className="text-center text-2xl mt-4">Our Team</h1>
 
       <div className="overflow-hidden">
         <div className="flex transition-transform ease-in-out duration-1000" style={{ transform: `translateX(-${activeIndex * 33.33}%)` }}>
-          {cardData.map((card, index) => (
+          {[...cardData, ...cardData, ...cardData].map((card, index) => (
             <div key={index} className="flex-shrink-0 w-full sm:w-1/3">
               <Card
                 bgCardSrc={card.bgCardSrc}

@@ -47,7 +47,7 @@ const Header = () => {
     <div>
       
     <div className="flex fixed justify-between items-center w-full h-20 px-4 bg-white text-white nav z-50">
-      <div className="text-5xl font-signature ml-2">
+      <div className="text-5xl font-signature ml-2 relative">
         <Image
           src="/logo.png"
           width={200}
@@ -106,7 +106,7 @@ const Header = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/mentarro/">
+          <a href="https://www.linkedin.com/in/mentarro/" target="_blank" rel="noopener noreferrer">
             <AiFillLinkedin className="w-6 h-6 text-blue-600 hover:scale-105 duration-200" />
           </a>
         </li>
@@ -126,6 +126,7 @@ const Header = () => {
         </ul>
       )}
     </div>
+    <div className="h-20"></div>
 </div>
   );
 };

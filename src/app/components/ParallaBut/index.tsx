@@ -3,11 +3,19 @@ import React from 'react'
 function index() {
   return (
     <div>
-      <div className='flex items-center justify-center h-96 bg-fixed bg-cover' style={{backgroundImage: 'url(./second.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <h1 className='text-5xl uppercase'>Remote Way Of Teaching</h1>
-      <div
-    className="relative text-black hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-  </div>
+      <div className='flex items-center justify-center h-96 bg-fixed bg-cover' style={{backgroundImage: 'url(./remote.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <h1 className='text-5xl text-red-600 font-extrabold uppercase styled-text'>Remote Way Of Teaching</h1>
+      <style jsx>{`
+  .styled-text {
+    font-family: 'YourStylishFont', sans-serif; /* Replace 'YourStylishFont' with the name of your preferred font */
+    border: 3px solid #fff; /* Add a border around the text */
+    padding: 10px; /* Add some padding to make the border more visible */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add a shadow effect to the text */
+    filter: drop-shadow(0px 0px 10px rgba(255, 0, 0, 0.8)); /* Add a drop shadow effect */
+  }
+`}</style>
+
+      
     </div>
     </div>
   )

@@ -21,11 +21,10 @@ export default function Trail() {
               </svg>
             </span>
             <div>
-              <h3 className="font-semibold text-xl"> Expressive API</h3>
+              <h3 className="font-semibold text-xl"> Responsive Application</h3>
               <p className="mt-1 text-gray-500">
                 {" "}
-                You do not need to be an expert to use our plugin. Our expressive
-                API is readable and well documented.
+                Our responsive application gives best user experience
               </p>
             </div>
           </div>
@@ -48,11 +47,10 @@ export default function Trail() {
               </svg>
             </span>
             <div>
-              <h3 className="font-semibold text-xl">Highly performant</h3>
+              <h3 className="font-semibold text-xl">Impressive Design</h3>
               <p className="mt-1 text-gray-500">
                 {" "}
-                You can make sure your website or app is highly performant with a
-                built-in system to help you optimize.
+                Design which is very attracted by the user
               </p>
             </div>
           </div>
@@ -75,11 +73,10 @@ export default function Trail() {
               </svg>
             </span>
             <div>
-              <h3 className="font-semibold text-xl">No dependencies </h3>
+              <h3 className="font-semibold text-xl">Clean Learning Path </h3>
               <p className="mt-1 text-gray-500">
                 {" "}
-                Our plugins do not have any external dependencies so our plugin
-                has the minimal footprint possible.
+                A clear simple pathway to learn new technology
               </p>
             </div>
           </div>

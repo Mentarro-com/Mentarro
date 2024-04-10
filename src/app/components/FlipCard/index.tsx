@@ -27,7 +27,7 @@ const FlippingCard: React.FC<FlippingCardProps> = ({ frontImage, backDescription
         </div>
       </div>
       <div className={`back ${isFlipped ? 'block' : 'hidden'}`}>
-        <p className="back-description">{backDescription}</p>
+        <p className="back-description text-zinc-950">{backDescription}</p>
       </div>
       <style jsx>{`
         .card {
@@ -93,9 +93,15 @@ const FlippingCard: React.FC<FlippingCardProps> = ({ frontImage, backDescription
         }
 
         .back-description {
-          color: #fff;
+          color: black;
           font-size: 16px;
+          padding: 8px;
+          font-family: 'Roboto', sans-serif; 
+          font-weight: bold; 
+          font-style: italic; 
+          /* Add more styles as needed */
         }
+        
 
         @media (max-width: 768px) {
           .card {
@@ -120,21 +126,24 @@ const FlippingCard: React.FC<FlippingCardProps> = ({ frontImage, backDescription
 const HomePage: React.FC = () => {
   return (
 
-  <div>
-    <div className="flex flex-col justify-center items-center h-screen lg:gap-28 md:flex-row md:flex-wrap md:justify-center">
+  <div className='mb-16'>
+    <h1 className='text-black text-3xl font-bold ml-20 mb-8'>Mentarro's <span className='text-red-600'>Mantras</span></h1>
+    <div className="flex flex-col justify-center  lg:gap-28 md:flex-row md:flex-wrap md:justify-center">
+
+      
       <FlippingCard
         frontImage="/web.webp"
-        backDescription="Description for card 1."
+        backDescription="We are a web development company specializing in crafting innovative and user-friendly websites for businesses of all sizes. Our team of experts merges creativity with cutting-edge technology to bring your online vision to life. From design to deployment, we're dedicated to delivering exceptional digital solutions tailored to your needs."
         title="Web Development"
       />
       <FlippingCard
         frontImage="/career.jpeg"
-        backDescription="Description for card 1."
+        backDescription="Guiding new students toward career success with personalized support and resources. We help you explore interests, develop skills, and achieve your goals."
         title="Career Guidance"
       />
       <FlippingCard
         frontImage="/ai.jpeg"
-        backDescription="Description for card 1."
+        backDescription="Empowering beginners with AI learning paths and teaching interaction techniques to get the answers they need. Dive into AI with structured guidance and learn to harness its potential for your goals."
         title="AI Learning Path"
       />
     </div>

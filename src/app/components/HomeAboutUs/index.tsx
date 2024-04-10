@@ -50,7 +50,7 @@ const YourComponent: React.FC = () => {
                   <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl"><span className="text-red-600">About</span> Us</h2>
                   <p className="mt-4 text-gray-600 text-lg">Welcome to Mentarro, a digital space dedicated to fostering connections, promoting collaboration, and empowering individuals to thrive within a vibrant community ecosystem. At Mentarro, we believe in the power of unity, diversity, and shared experiences. Our platform serves as a dynamic hub where people from all walks of life can come together, exchange ideas, and embark on meaningful journeys of personal and collective growth.</p>
                   <div className="mt-8">
-                    <Link href="#" className="text-blue-500 hover:text-blue-600 font-medium">
+                    <Link href="/pages/AboutPage" className="text-blue-500 hover:text-blue-600 font-medium">
                       Learn more about us
                       <span className="ml-2">&#8594;</span>
                     </Link>

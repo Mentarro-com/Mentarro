@@ -27,9 +27,14 @@ const Footer: React.FC = () => {
           </div>
           <div className="md:col-span-1">
             <div className="text-center">
-              <h2 className="text-lg font-semibold mb-2 text-red-600">Contact Us</h2>
-              <p className="text-sm">123 Street Name, City, Country</p>
-              <p className="text-sm">info@example.com</p>
+              <h2 className="text-lg font-semibold mb-2 text-red-600">Contact Us Via Form</h2>
+              <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScVCbRTwx_ysF-2oHod9aDr1-6EEk8lSinc52__FMMbj4znbQ/viewform?usp=sf_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-blue-500 transition-colors duration-300"
+                >Mentarro Form</a>
+            
             </div>
           </div>
           <div className="md:col-span-1">
