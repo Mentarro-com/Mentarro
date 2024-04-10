@@ -12,7 +12,7 @@ function index() {
 
   const second = useSpring({
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "translateX(0%)" : "translateX(100%)",
+    transform: isVisible ? "translateX(0%)" : "translateY(-100%)",
     config: { duration: 200 },
   });
 
@@ -20,7 +20,7 @@ function index() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      const targetPosition = windowHeight * 0.45;
+      const targetPosition = windowHeight * 0.65;
 
       if (scrollPosition > targetPosition) {
         setIsVisible(true);
@@ -88,20 +88,20 @@ function index() {
         </div>
       </section>
 
-      <div>
-        <div className="sm:flex items-center max-w-screen-xl">
+      <div className="flex justify-center mr-9">
+        <div className="sm:flex items-center max-w-screen-xl ml-[20%]">
           <animated.div style={phone}>
             <div className="sm:w-1/2 p-10">
               <div className="image object-center text-center lg:ml-36">
                 <div
-                  className="relative flex justify-center h-[520px] w-[250px] border-4 border-black rounded-2xl shadow-lg"
+                  className="relative flex justify-center h-[440px] w-[230px] border-4 border-black rounded-2xl shadow-lg p-8"
                   style={{
                     backgroundImage: "url(/we.jpg)",
-                    backgroundSize: "cover",
+                    backgroundSize: "contain",
                     backgroundPosition: "center",
                   }}
                 >
-                  <span className="border border-black bg-black w-20 h-2 rounded-br-xl rounded-bl-xl"></span>
+                  <span className="border border-black bg-black w-20 h-2 rounded-br-xl rounded-bl-xl mt-[-35px]"></span>
                   <span className="absolute -right-2 top-20  border-4 border-black h-10 rounded-md"></span>
                   <span className="absolute -right-2 top-44  border-4 border-black h-24 rounded-md"></span>
                 </div>
@@ -110,7 +110,7 @@ function index() {
           </animated.div>
 
           <animated.div style={second}>
-            <div className="sm:w-1/2 p-5">
+            <div className="sm:w-1/2 p-2">
               <div className="text">
                 <span className="text-slate-700 text-xl border-b-2 border-pink-600 uppercase">
                   Instagram

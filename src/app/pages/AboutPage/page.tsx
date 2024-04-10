@@ -148,8 +148,8 @@ function page() {
   return (
     <div className="overflowX: 'hidden'">
       <section className="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16 ">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="grid items-center grid-cols-1 md:grid-cols-2">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl ">
+          <div className="grid items-center grid-cols-1 md:grid-cols-2 mt-[-45px]">
             <div>
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
               About Us
