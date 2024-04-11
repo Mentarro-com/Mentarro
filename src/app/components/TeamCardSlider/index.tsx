@@ -6,7 +6,9 @@ import logith from "../../../../public/logith.jpg";
 import lokesh from "../../../../public/lokesh.jpeg";
 import jeevan from "../../../../public/jeevan.jpeg";
 import haresh from "../../../../public/haresh.jpeg";
-import siva from "../../../../public/siva.png";
+import jemila from "../../../../public/jem.jpeg";
+import jp from "../../../../public/jp.jpeg";
+import siva from "../../../../public/siv.png";
 
 const TestimonialSlider: React.FC = () => {
   const cardData = [
@@ -30,7 +32,7 @@ const TestimonialSlider: React.FC = () => {
     },
     {
       bgCardSrc: bgCard,
-      idCardSrc: idCard,
+      idCardSrc: jp,
       name: "Jayaprakash",
       age: "21",
       location: "Chennai",
@@ -48,7 +50,7 @@ const TestimonialSlider: React.FC = () => {
     },
     {
       bgCardSrc: bgCard,
-      idCardSrc: idCard,
+      idCardSrc: jemila,
       name: "Jemila Sharlet",
       age: "21",
       location: "Chennai",

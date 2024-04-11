@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import Marquee from 'react-fast-marquee';
 import { FaReact, FaNodeJs, FaDatabase, FaDocker, FaAws } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript, SiGraphql, SiKubernetes } from 'react-icons/si';
+import { TbBrandVercel } from "react-icons/tb";
 
 const TechStackMarquee: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -71,7 +72,7 @@ const TechStackMarquee: React.FC = () => {
               <SiKubernetes className='text-blue-700'/>
             </div>
             <div className="tech-item flex items-center">
-              <FaDatabase className='text-violet-500'/>
+              <TbBrandVercel className='text-black'/>
             </div>
           </div>
         </div>

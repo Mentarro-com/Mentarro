@@ -2,10 +2,10 @@
 import React from 'react';
 const HeroVideo = () => {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center text-center text-white">
+    <div className="relative h-screen flex flex-col items-center justify-center text-center text-white">
       <div className="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
         <video className="min-w-full min-h-full absolute object-cover"
-          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
+          src="/intro.mp4"
           autoPlay muted loop></video>
       </div>
       <div className="video-content absolute top-10 left-0 right-0 text-center z-10">
@@ -29,7 +29,7 @@ const HeroVideo = () => {
           z-index: 1;
         }
       `}</style>
-    </section>
+    </div>
   );
 };
 export default HeroVideo;

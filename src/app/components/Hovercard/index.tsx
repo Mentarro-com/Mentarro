@@ -33,7 +33,7 @@ function Index({ data }: { data: Data }) {
                 {data.description}
               </p>
             </div>
-            <div className="pt-5 text-base font-semibold leading-7">
+            {/* <div className="pt-5 text-base font-semibold leading-7">
               <p>
                 <a
                   href="#"
@@ -42,7 +42,7 @@ function Index({ data }: { data: Data }) {
                   Read the docs &rarr;
                 </a>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
