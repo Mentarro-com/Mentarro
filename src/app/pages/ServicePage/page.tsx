@@ -42,7 +42,7 @@ function Index() {
   return (
     <div>
       <div className="bg-gray-900 py-20">
-        <div className="container mx-auto px-6 md:px-12 mt-[35px]">
+        <div className="container mx-auto px-6 md:px-12 mt-[-90px]">
           <div className="flex flex-col md:flex-row items-center">
             <animated.div
               className="md:w-1/2 lg:w-2/3"
@@ -57,7 +57,7 @@ function Index() {
                 all sizes.
               </p>
             </animated.div>
-            <div className="md:w-1/2 lg:w-1/3 mt-8 md:mt-0">
+            <div className="md:w-1/2 lg:w-1/3">
               <Image
                 src="https://www.svgrepo.com/show/164986/logo.svg"
                 alt="Hero Image"
@@ -67,7 +67,7 @@ function Index() {
               />
             </div>
           </div>
-          <div className="relative inline-flex group mt-[-70px]">
+          <div className="relative inline-flex group">
             <div className="absolute transition-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt animate-top"></div>
             <Link href="#sectionId">
               <animated.h4

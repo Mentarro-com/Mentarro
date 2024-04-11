@@ -127,7 +127,7 @@ const HomePage: React.FC = () => {
   return (
 
   <div className='mb-16'>
-    <h1 className='text-black text-3xl font-bold ml-20 mb-8'>Mentarro's <span className='text-red-600'>Mantras</span></h1>
+    <h1 className='text-black text-3xl font-bold ml-20 mb-8'><span className='text-red-600'>Mentarro's</span> Mantras</h1>
     <div className="flex flex-col justify-center  lg:gap-28 md:flex-row md:flex-wrap md:justify-center">
 
       

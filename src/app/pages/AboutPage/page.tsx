@@ -132,9 +132,9 @@ function page() {
   return (
     <div className="overflowX: 'hidden'">
       <section className="pt-10 overflow-hidden bg-gray-50 md:pt-0 sm:pt-16 2xl:pt-16 ">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl ">
+        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl mt-9">
           <div className="grid items-center grid-cols-1 md:grid-cols-2 mt-[-45px]">
-            <div className="mt-32">
+            <div className="mt-35px">
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
              <animated.div style={aboutus}>          
              <span className="text-red-600">About</span> Us
@@ -179,7 +179,7 @@ function page() {
 
       <div className="text-center p-12 mb-9">
         <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-          <span className="text-red-600">Why to </span>choose US?
+          <span className="text-red-600 mt-[8px]">Why to </span>choose US?
         </h2>
 
         <animated.div style={first}>

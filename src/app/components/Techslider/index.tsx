@@ -41,8 +41,8 @@ const TechStackMarquee: React.FC = () => {
   }, []);
 
   return (
-    <div className="text-white font-extrabold text-3xl py-9">
-      <h1 className='text-black ml-20 mb-8'>Tech Stacks </h1>
+    <div className="text-white font-extrabold text-3xl py-9 mb-12">
+      <h1 className='text-black ml-20 mb-12 py-3'><span className='text-red-600'>Tech</span> Stacks </h1>
       <Marquee pauseOnClick>
         <div className="overflow-hidden px-4 md:px-0">
           <div ref={containerRef} className="flex space-x-8 sm:space-x-12 md:space-x-16 lg:space-x-20 xl:space-x-28 text-6xl">
