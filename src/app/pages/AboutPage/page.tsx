@@ -141,7 +141,7 @@ function Page() {
               </h2>
               <animated.div style={aboutpara}>
                 <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
-                  "At Mentarro, we are not just a company; we are a digital
+                &#34;At Mentarro, we are not just a company; we are a digital
                   force, cutting through the clutter with our dynamic team of
                   trend-savvy experts. Founded by a visionary entrepreneur, we
                   are here to revolutionize your online presence. With our
@@ -149,7 +149,7 @@ function Page() {
                   we craft bespoke websites and game-changing ideas that propel
                   your business to the forefront of your industry. Say goodbye
                   to outdated methods and hello to a vibrant online future with
-                  Mentarro."
+                  Mentarro.&#34;
                 </p>
               </animated.div>
 
@@ -158,7 +158,7 @@ function Page() {
                   <span className="relative"> Have a question? </span>
                 </span>
                 <br className="block sm:hidden" />
-                Ask me on{" "}
+                Ask me on 
                 <a
                   href="https://www.instagram.com/mentarro/"
                   target="_blank"
@@ -355,37 +355,37 @@ function Page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
               <p className="text-gray-700 mb-4">
-                "Being new to the field, I was thrilled to discover this
+              &#34;Being new to the field, I was thrilled to discover this
                 organization. Their AI learning path is incredibly accessible,
                 breaking down complex concepts into manageable steps. The
                 guidance on interacting with AI is practical and hands-on,
                 making it easy to apply in real-world scenarios. I&apos;m
                 grateful for the opportunity to learn and grow with such a
-                supportive community!".
+                supportive community!&#34;.
               </p>
               <p className="text-gray-700 font-medium">- Junior</p>
             </div>
 
             <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
               <p className="text-gray-700 mb-4">
-                "I &apos;m delighted to witness the inception of this remarkable
+              &#34;I &apos;m delighted to witness the inception of this remarkable
                 new organization!I am confident that this venture will inspire
                 and enable countless individuals to realize their aspirations,
                 propelling them toward unparalleled achievements. Here&apos;s to
-                a journey filled with triumphs and transformative impact!"
+                a journey filled with triumphs and transformative impact!&#34;
               </p>
               <p className="text-gray-700 font-medium">- Well Wisher</p>
             </div>
 
             <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
               <p className="text-gray-700 mb-4">
-                "Their approach to AI education and career guidance is nothing
+              &#34;Their approach to AI education and career guidance is nothing
                 short of exemplary.They are equipping students with essential
                 skills for the future. I have no doubt that their commitment to
                 excellence will cultivate a new generation of knowledgeable and
                 skilled professionals. I eagerly anticipate the positive impact
                 this organization will have on the educational landscape and
-                beyond."
+                beyond.&#34;
               </p>
               <p className="text-gray-700 font-medium">- Teacher</p>
             </div>
