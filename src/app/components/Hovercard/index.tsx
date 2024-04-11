@@ -10,7 +10,7 @@ function Index({ data }: { data: Data }) {
     <div className="flex items-center justify-center py-6 sm:py-12">
       <div className="w-full sm:max-w-sm">
         <div className="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-lg">
-          <span className="absolute top-10 left-1/2 transform -translate-x-1/2 z-0 h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[10]"></span>
+          <span className="absolute top-10 left-1/2 transform -translate-x-1/2 z-0 h-20 w-20 rounded-full bg-sky-200 transition-all duration-300 group-hover:scale-[10]"></span>
           <div className="relative z-10 text-center">
             <span className="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400 mx-auto mb-6">
               <svg
@@ -28,7 +28,7 @@ function Index({ data }: { data: Data }) {
                 />
               </svg>
             </span>
-            <div className="space-y-6 text-base leading-7 text-gray-600">
+            <div className="space-y-6 text-base leading-7 text-black">
               <p>
                 {data.description}
               </p>

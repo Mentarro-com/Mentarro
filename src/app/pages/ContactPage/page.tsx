@@ -118,7 +118,13 @@ function index() {
                 <h2 className="my-4 font-bold text-3xl  sm:text-4xl ">
                   Follow <span className="text-red-600">Our Page</span>
                 </h2>
-                <h1 className="text-zinc-900 text-3xl">@mentarro</h1>
+                <a
+                  href="https://www.instagram.com/mentarro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-all duration-200 text-3xl text-zinc-900 hover:text-pink-600 hover:underline"
+                > @mentarro</a>
+                
               </div>
             </div>
           </animated.div>
@@ -138,7 +144,7 @@ function index() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLScVCbRTwx_ysF-2oHod9aDr1-6EEk8lSinc52__FMMbj4znbQ/viewform?usp=sf_link"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="relative  text-black text-4xl hover:text-red-500 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
+                className="relative  font-bold text-black text-4xl hover:text-red-500 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-gray-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-gray-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]"
               >
                 Mentarro Form
               </a>

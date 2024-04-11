@@ -2,7 +2,7 @@ export default function Trail() {
     return (
       <div className="p-10 mb-14">
         <div className="grid md:grid-cols-3 max-w-screen-lg mx-auto gap-10 mt-16 px-5 ">
-          <div className="flex gap-4 items-start flex-col border border-transparent p-6 rounded-lg shadow-lg bg-white bg-opacity-30 backdrop-filter backdrop-blur-md">
+          <div className="flex gap-4 items-start flex-col border border-transparent p-6 rounded-lg shadow-lg bg-white bg-opacity-30 backdrop-filter backdrop-blur-md hover:scale-105 transition-transform">
             <span className="text-violet-600 bg-violet-500/10 p-3 rounded-full">
               <svg
                 width="15"
@@ -28,7 +28,7 @@ export default function Trail() {
               </p>
             </div>
           </div>
-          <div className="flex gap-4 items-start flex-col border border-transparent p-6 rounded-lg shadow-lg bg-white bg-opacity-30 backdrop-filter backdrop-blur-md">
+          <div className="flex gap-4 items-start flex-col border border-transparent p-6 rounded-lg shadow-lg bg-white bg-opacity-30 backdrop-filter backdrop-blur-md hover:scale-105 transition-transform">
             <span className="text-violet-600 bg-violet-500/10 p-3 rounded-full">
               <svg
                 width="15"
@@ -54,7 +54,7 @@ export default function Trail() {
               </p>
             </div>
           </div>
-          <div className="flex gap-4 items-start flex-col border border-transparent p-6 rounded-lg shadow-lg bg-white bg-opacity-30 backdrop-filter backdrop-blur-md">
+          <div className="flex gap-4 items-start flex-col border border-transparent p-6 rounded-lg shadow-lg bg-white bg-opacity-30 backdrop-filter backdrop-blur-md hover:scale-105 transition-transform">
             <span className="text-violet-600 bg-violet-500/10 p-3 rounded-full">
               <svg
                 width="15"

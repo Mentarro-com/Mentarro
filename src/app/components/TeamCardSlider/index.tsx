@@ -8,7 +8,7 @@ import jeevan from "../../../../public/jeevan.jpeg";
 import haresh from "../../../../public/haresh.jpeg";
 import jemila from "../../../../public/jem.jpeg";
 import jp from "../../../../public/jp.jpeg";
-import siva from "../../../../public/siv.png";
+import siva from "../../../../public/siva.png";
 
 const TestimonialSlider: React.FC = () => {
   const cardData = [

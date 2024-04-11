@@ -79,17 +79,19 @@ const Footer: React.FC = () => {
           <div className="md:col-span-1">
             <div className="text-center">
               <h2 className="text-lg font-semibold mb-2 text-red-600">Quick Links</h2>
-              <p className="text-sm mb-2 hover:text-slate-300"><a href="https://maps.google.com">Home</a></p>
-              <p className="text-sm mb-2 hover:text-slate-300"><a href="mailto:info@example.com">About</a></p>
-              <p className="text-sm mb-2 hover:text-slate-300"><a href="mailto:info@example.com">Services</a></p>
-              <p className="text-sm mb-2 hover:text-slate-300"><a href="mailto:info@example.com">Works</a></p>
-              <p className="text-sm mb-2 hover:text-slate-300"><a href="mailto:info@example.com">Contact</a></p>
+              <p className="text-sm mb-2 hover:text-slate-300"><a href="/">Home</a></p>
+              <p className="text-sm mb-2 hover:text-slate-300"><a href="/pages/AboutPage">About</a></p>
+              <p className="text-sm mb-2 hover:text-slate-300"><a href="/pages/ServicePage">Services</a></p>
+              <p className="text-sm mb-2 hover:text-slate-300"><a href="/pages/WorkPage">Works</a></p>
+              <p className="text-sm mb-2 hover:text-slate-300"><a href="/pages/ContactPage">Contact</a></p>
             </div>
           </div>
         </div>
       </div>
       <div className="mt-8 border-t border-gray-600 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-center">
-        <p className="mt-4">&copy; Copyright Mentarro&trade;. All Rights Reserved.</p>
+        <p className="mt-4">&copy; Copyright Mentarro&trade;. All Rights Reserved. </p>
+        <a href="/UDYAM.pdf" className="hover:text-red-500" download>We are Udayam Registered.</a>
+        <h6></h6>
       </div>
     </footer>
   );
