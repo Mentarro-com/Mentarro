@@ -34,9 +34,9 @@ function Index() {
 
 
   const data = [
-    { description: "Description 1 Empowering individuals to define their career aspirations and set actionable goals for personal and professional growth" },
-    { description: "Empowering individuals to define their career aspirations and set actionable goals for personal and professional growth" },
-    { description: "Description 3 Empowering individuals to define their career aspirations and set actionable goals for personal and professional growth" }
+    { description: "Aspire: Dare to dream big. With Mentarro, turn your career aspirations into reality through personalized guidance and support." },
+    { description: "Achieve: Take charge of your future. Mentarro equips you with the tools and resources to set actionable goals and make tangible progress towards your professional ambitions." },
+    { description: "Advance: Propel your career forward. Mentarro's expert mentors help you navigate obstacles and seize opportunities, ensuring continuous growth and advancement in your journey." }
   ];
   
   return (
@@ -49,8 +49,8 @@ function Index() {
               style={aboutAnimationProps}
             >
               <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6">
-                Welcome to our <br className="hidden md:block" />
-                <span className="text-red-600">Organization</span> Website
+                Welcome to  <br className="hidden md:block" />
+                <span className="text-red-600">Mentarro</span> 
               </h1>
               <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8">
                 We create beautiful and functional websites for businesses of
