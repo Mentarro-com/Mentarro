@@ -127,13 +127,13 @@ const HomePage: React.FC = () => {
   return (
 
   <div className='mb-16'>
-    <h1 className='text-black text-3xl font-bold ml-20 mb-8'><span className='text-red-600'>Mentarro's</span> Mantras</h1>
+    <h1 className='text-black text-3xl font-bold ml-20 mb-8'><span className='text-red-600'>Mentarro &apos; </span> Mantras</h1>
     <div className="flex flex-col justify-center  lg:gap-28 md:flex-row md:flex-wrap md:justify-center">
 
       
       <FlippingCard
         frontImage="/web.webp"
-        backDescription="We are a web development company specializing in crafting innovative and user-friendly websites for businesses of all sizes. Our team of experts merges creativity with cutting-edge technology to bring your online vision to life. From design to deployment, we're dedicated to delivering exceptional digital solutions tailored to your needs."
+        backDescription="We are a web development company specializing in crafting innovative and user-friendly websites for businesses of all sizes. Our team of experts merges creativity with cutting-edge technology to bring your online vision to life. From design to deployment, we are dedicated to delivering exceptional digital solutions tailored to your needs."
         title="Web Development"
       />
       <FlippingCard

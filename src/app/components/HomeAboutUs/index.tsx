@@ -2,7 +2,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { useSpring, animated } from 'react-spring';
-import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
+
 import Link from 'next/link';
 
 const YourComponent: React.FC = () => {
@@ -58,7 +59,15 @@ const YourComponent: React.FC = () => {
                 </div>
               </animated.div>
               <animated.div style={image} className="mt-12 md:mt-0 shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86" alt="About Us Image" className="object-cover rounded-lg shadow-md w-full" />
+                
+                <Image
+      src="https://images.unsplash.com/photo-1531973576160-7125cd663d86"
+      alt="About Us Image"
+      layout="responsive"
+      width={1920}
+      height={1080}
+      className="object-cover rounded-lg shadow-md"
+    />
               </animated.div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { animated, useSpring } from "react-spring";
-function index() {
+function Index() {
   const [isVisible, setIsVisible] = useState(false);
 
   const phone = useSpring({
@@ -157,4 +157,4 @@ function index() {
     </div>
   );
 }
-export default index;
+export default Index;

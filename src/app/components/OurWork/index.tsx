@@ -2,7 +2,8 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { animated, useSpring } from "react-spring";
-function index() {
+
+function Index() {
   
   const [isVisible, setIsVisible] = useState(false);
 
@@ -166,4 +167,4 @@ function index() {
     </div>
   );
 }
-export default index;
+export default Index;

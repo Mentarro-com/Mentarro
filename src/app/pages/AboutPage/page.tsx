@@ -12,7 +12,7 @@ function AnimatedNumber({ value }: AnimatedNumberProps) {
   return <animated.span>{value.to((n: any) => Math.floor(n))}</animated.span>;
 }
 
-function page() {
+function Page() {
 
   const [isVisibleFirst, setIsVisibleFirst] = useState(false);
   const [isVisibleSecond, setIsVisibleSecond] = useState(false);
@@ -144,7 +144,7 @@ function page() {
               </h2>
               <animated.div style={aboutpara}>
               <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">      
-"At Mentarro, we're not just a company; we're a digital force, cutting through the clutter with our dynamic team of trend-savvy experts. Founded by a visionary entrepreneur, we're here to revolutionize your online presence. With our relentless pursuit of excellence and a knack for innovation, we craft bespoke websites and game-changing ideas that propel your business to the forefront of your industry. Say goodbye to outdated methods and hello to a vibrant online future with Mentarro."
+"At Mentarro, we are not just a company; we are a digital force, cutting through the clutter with our dynamic team of trend-savvy experts. Founded by a visionary entrepreneur, we are here to revolutionize your online presence. With our relentless pursuit of excellence and a knack for innovation, we craft bespoke websites and game-changing ideas that propel your business to the forefront of your industry. Say goodbye to outdated methods and hello to a vibrant online future with Mentarro."
               </p>
               </animated.div>
 
@@ -196,7 +196,7 @@ function page() {
               Tailored Career and Goal Setting Solutions
               </h3>
               <p className="sm:text-lg mt-6">
-              At Mentarro, we recognize that everyone's career journey is distinct. That's why we provide tailored career and goal setting solutions, designed to match your aspirations and ambitions. Whether you're seeking advancement, skill enhancement, or personal growth, our strategies keep you on the path to success.
+              At Mentarro, we recognize that everyone&apos;s career journey is distinct. That&apos;s why we provide tailored career and goal setting solutions, designed to match your aspirations and ambitions. Whether you are seeking advancement, skill enhancement, or personal growth, our strategies keep you on the path to success.
               </p>
             </div>
           </div>
@@ -216,7 +216,7 @@ function page() {
               Strategic Planning Expertise
               </h3>
               <p className="sm:text-lg mt-6">
-              Strategic planning is the bedrock of success for any venture. At Mentarro, we excel in crafting bespoke strategies perfectly attuned to your unique needs and objectives. Our seasoned strategists work hand-in-hand with you to uncover opportunities, navigate risks, and pave the way for sustainable growth and triumph. Let's chart your course to success together.
+              Strategic planning is the bedrock of success for any venture. At Mentarro, we excel in crafting bespoke strategies perfectly attuned to your unique needs and objectives. Our seasoned strategists work hand-in-hand with you to uncover opportunities, navigate risks, and pave the way for sustainable growth and triumph. Let&apos;s chart your course to success together.
               </p>
             </div>
           </div>
@@ -236,7 +236,7 @@ function page() {
               Customizable App Development Solutions
               </h3>
               <p className="sm:text-lg mt-6">
-              In today's digital age, a standout app is your ticket to staying ahead in the competition. At Mentarro, we don't just offer app development solutions; we craft experiences that resonate with your brand. From ideation to launch, our skilled developers harness the latest tech to deliver apps that captivate users and yield tangible results. Let's turn your vision into a digital reality that sets you apart.
+              In today&apos;s digital age, a standout app is your ticket to staying ahead in the competition. At Mentarro, we don&apos;t just offer app development solutions; we craft experiences that resonate with your brand. From ideation to launch, our skilled developers harness the latest tech to deliver apps that captivate users and yield tangible results. Let&apos;s turn your vision into a digital reality that sets you apart.
               </p>
             </div>
           </div>
@@ -256,7 +256,7 @@ function page() {
               Dedicated Support
               </h3>
               <p className="sm:text-lg mt-6">
-              At Mentarro, your success is our top priority. We provide dedicated support every step of the way, ensuring that you have the guidance, resources, and expertise needed to achieve your goals. From initial consultation to ongoing support and optimization, we're committed to your success.
+              At Mentarro, your success is our top priority. We provide dedicated support every step of the way, ensuring that you have the guidance, resources, and expertise needed to achieve your goals. From initial consultation to ongoing support and optimization, we are committed to your success.
               </p>
             </div>
           </div>
@@ -325,14 +325,14 @@ function page() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
                 <p className="text-gray-700 mb-4">
-                  "Being new to the field, I was thrilled to discover this organization. Their AI learning path is incredibly accessible, breaking down complex concepts into manageable steps. The guidance on interacting with AI is practical and hands-on, making it easy to apply in real-world scenarios. I'm grateful for the opportunity to learn and grow with such a supportive community!".
+                  "Being new to the field, I was thrilled to discover this organization. Their AI learning path is incredibly accessible, breaking down complex concepts into manageable steps. The guidance on interacting with AI is practical and hands-on, making it easy to apply in real-world scenarios. I&apos;m grateful for the opportunity to learn and grow with such a supportive community!".
                 </p>
                 <p className="text-gray-700 font-medium">- Junior</p>
               </div>
 
               <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
                 <p className="text-gray-700 mb-4">
-                "I'm delighted to witness the inception of this remarkable new organization!I am confident that this venture will inspire and enable countless individuals to realize their aspirations, propelling them toward unparalleled achievements. Here's to a journey filled with triumphs and transformative impact!"
+                "I &apos;m delighted to witness the inception of this remarkable new organization!I am confident that this venture will inspire and enable countless individuals to realize their aspirations, propelling them toward unparalleled achievements. Here&apos;s to a journey filled with triumphs and transformative impact!"
                 </p>
                 <p className="text-gray-700 font-medium">
                 - Well Wisher
@@ -341,7 +341,7 @@ function page() {
 
               <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
                 <p className="text-gray-700 mb-4">
-                "Their approach to AI education and career guidance is nothing short of exemplary.They're equipping students with essential skills for the future. I have no doubt that their commitment to excellence will cultivate a new generation of knowledgeable and skilled professionals. I eagerly anticipate the positive impact this organization will have on the educational landscape and beyond."
+                "Their approach to AI education and career guidance is nothing short of exemplary.They are equipping students with essential skills for the future. I have no doubt that their commitment to excellence will cultivate a new generation of knowledgeable and skilled professionals. I eagerly anticipate the positive impact this organization will have on the educational landscape and beyond."
                 </p>
                 <p className="text-gray-700 font-medium">
                   - Teacher
@@ -355,4 +355,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

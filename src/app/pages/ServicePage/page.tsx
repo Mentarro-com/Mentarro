@@ -88,7 +88,7 @@ function Index() {
         id="sectionId"
       >
         {data.map((data, index) => (
-      <Hovercard data={data} />
+      <Hovercard data={data} key={index}/>
     ))}
       </div>
 
