@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
 import React, { useEffect, useState } from "react";
 import { animated, useInView, useSpring } from "react-spring";
-
+import Image from "next/image";
 
 interface AnimatedNumberProps {
   value: any;
@@ -13,7 +13,6 @@ function AnimatedNumber({ value }: AnimatedNumberProps) {
 }
 
 function Page() {
-
   const [isVisibleFirst, setIsVisibleFirst] = useState(false);
   const [isVisibleSecond, setIsVisibleSecond] = useState(false);
   const [isVisibleThird, setIsVisibleThird] = useState(false);
@@ -31,41 +30,40 @@ function Page() {
       setIsVisibleSecond(scrollPosition > targetPositionSecond);
       setIsVisibleThird(scrollPosition > targetPositionThird);
       setIsVisibleFourth(scrollPosition > targetPositionFourth);
-
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const first = useSpring({
     opacity: isVisibleFirst ? 1 : 0,
-    transform: isVisibleFirst ? 'translateX(0%)' : 'translateX(-100%)',
+    transform: isVisibleFirst ? "translateX(0%)" : "translateX(-100%)",
     config: { duration: 500 },
-    delay: isVisibleFirst ? 500 : 0
+    delay: isVisibleFirst ? 500 : 0,
   });
 
   const second = useSpring({
     opacity: isVisibleSecond ? 1 : 0,
-    transform: isVisibleSecond ? 'translateX(0%)' : 'translateY(-100%)',
+    transform: isVisibleSecond ? "translateX(0%)" : "translateY(-100%)",
     config: { duration: 500 },
-    delay: isVisibleSecond ? 500 : 0
+    delay: isVisibleSecond ? 500 : 0,
   });
 
   const third = useSpring({
     opacity: isVisibleThird ? 1 : 0,
-    transform: isVisibleThird ? 'translateX(0%)' : 'translateX(-100%)',
+    transform: isVisibleThird ? "translateX(0%)" : "translateX(-100%)",
     config: { duration: 500 },
-    delay: isVisibleThird ? 500 : 0
+    delay: isVisibleThird ? 500 : 0,
   });
 
   const fourth = useSpring({
     opacity: isVisibleFourth ? 1 : 0,
-    transform: isVisibleFourth ? 'translateX(0%)' : 'translateY(-100%)',
+    transform: isVisibleFourth ? "translateX(0%)" : "translateY(-100%)",
     config: { duration: 500 },
-    delay: isVisibleFourth ? 500 : 0
+    delay: isVisibleFourth ? 500 : 0,
   });
 
   const [animateFirst, setAnimateFirst] = useState(false);
@@ -96,7 +94,7 @@ function Page() {
   });
 
   const { number: numberSecond } = useSpring({
-    number: animateSecond ? 4: 0,
+    number: animateSecond ? 4 : 0,
     from: { number: 0 },
     config: { duration: 1500 },
   });
@@ -111,14 +109,14 @@ function Page() {
 
   const aboutus = useSpring({
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateX(0%)' : 'translateX(-100%)',
-    config: { duration: 500 }
+    transform: isVisible ? "translateX(0%)" : "translateX(-100%)",
+    config: { duration: 500 },
   });
 
   const aboutpara = useSpring({
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateX(0%)' : 'translateY(-100%)',
-    config: { duration: 400 }
+    transform: isVisible ? "translateX(0%)" : "translateY(-100%)",
+    config: { duration: 400 },
   });
 
   useEffect(() => {
@@ -136,16 +134,23 @@ function Page() {
           <div className="grid items-center grid-cols-1 md:grid-cols-2 mt-[-45px]">
             <div className="mt-35px">
               <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-             <animated.div style={aboutus}>          
-             <span className="text-red-600">About</span> Us
-             </animated.div>
+                <animated.div style={aboutus}>
+                  <span className="text-red-600">About</span> Us
+                </animated.div>
                 <br className="block sm:hidden" />
-                
               </h2>
               <animated.div style={aboutpara}>
-              <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">      
-"At Mentarro, we are not just a company; we are a digital force, cutting through the clutter with our dynamic team of trend-savvy experts. Founded by a visionary entrepreneur, we are here to revolutionize your online presence. With our relentless pursuit of excellence and a knack for innovation, we craft bespoke websites and game-changing ideas that propel your business to the forefront of your industry. Say goodbye to outdated methods and hello to a vibrant online future with Mentarro."
-              </p>
+                <p className="max-w-lg mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
+                  "At Mentarro, we are not just a company; we are a digital
+                  force, cutting through the clutter with our dynamic team of
+                  trend-savvy experts. Founded by a visionary entrepreneur, we
+                  are here to revolutionize your online presence. With our
+                  relentless pursuit of excellence and a knack for innovation,
+                  we craft bespoke websites and game-changing ideas that propel
+                  your business to the forefront of your industry. Say goodbye
+                  to outdated methods and hello to a vibrant online future with
+                  Mentarro."
+                </p>
               </animated.div>
 
               <p className="mt-4 text-xl text-gray-600 md:mt-8">
@@ -166,7 +171,6 @@ function Page() {
             </div>
 
             <div className="relative">
-              
               <img
                 className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
                 src="/about_top.jpeg"
@@ -185,18 +189,25 @@ function Page() {
         <animated.div style={first}>
           <div className="flex flex-wrap items-center mt-20  text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
-              <img
+              <Image
                 src="/about1.jpeg"
                 alt="gem"
+                width={300} // Set the desired width
+                height={200} // Set the desired height
                 className="inline-block rounded shadow-lg border border-merino-400"
               />
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
               <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-              Tailored Career and Goal Setting Solutions
+                Tailored Career and Goal Setting Solutions
               </h3>
               <p className="sm:text-lg mt-6">
-              At Mentarro, we recognize that everyone&apos;s career journey is distinct. That&apos;s why we provide tailored career and goal setting solutions, designed to match your aspirations and ambitions. Whether you are seeking advancement, skill enhancement, or personal growth, our strategies keep you on the path to success.
+                At Mentarro, we recognize that everyone&apos;s career journey is
+                distinct. That&apos;s why we provide tailored career and goal
+                setting solutions, designed to match your aspirations and
+                ambitions. Whether you are seeking advancement, skill
+                enhancement, or personal growth, our strategies keep you on the
+                path to success.
               </p>
             </div>
           </div>
@@ -205,18 +216,25 @@ function Page() {
         <animated.div style={second}>
           <div className="flex flex-wrap items-center mt-20 text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
-              <img
+              <Image
                 src="/about2.jpeg"
                 alt="project members"
+                width={300} // Set the desired width
+                height={200} // Set the desired height
                 className="inline-block rounded shadow-lg border border-merino-400"
               />
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
               <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-              Strategic Planning Expertise
+                Strategic Planning Expertise
               </h3>
               <p className="sm:text-lg mt-6">
-              Strategic planning is the bedrock of success for any venture. At Mentarro, we excel in crafting bespoke strategies perfectly attuned to your unique needs and objectives. Our seasoned strategists work hand-in-hand with you to uncover opportunities, navigate risks, and pave the way for sustainable growth and triumph. Let&apos;s chart your course to success together.
+                Strategic planning is the bedrock of success for any venture. At
+                Mentarro, we excel in crafting bespoke strategies perfectly
+                attuned to your unique needs and objectives. Our seasoned
+                strategists work hand-in-hand with you to uncover opportunities,
+                navigate risks, and pave the way for sustainable growth and
+                triumph. Let&apos;s chart your course to success together.
               </p>
             </div>
           </div>
@@ -225,18 +243,26 @@ function Page() {
         <animated.div style={third}>
           <div className="flex flex-wrap items-center mt-20 text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
-              <img
+              <Image
                 src="/about3.jpeg"
                 alt="editor"
+                width={300} // Set the desired width
+                height={200} // Set the desired height
                 className="inline-block rounded shadow-lg border border-merino-400"
               />
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12">
               <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-              Customizable App Development Solutions
+                Customizable App Development Solutions
               </h3>
               <p className="sm:text-lg mt-6">
-              In today&apos;s digital age, a standout app is your ticket to staying ahead in the competition. At Mentarro, we don&apos;t just offer app development solutions; we craft experiences that resonate with your brand. From ideation to launch, our skilled developers harness the latest tech to deliver apps that captivate users and yield tangible results. Let&apos;s turn your vision into a digital reality that sets you apart.
+                In today&apos;s digital age, a standout app is your ticket to
+                staying ahead in the competition. At Mentarro, we don&apos;t
+                just offer app development solutions; we craft experiences that
+                resonate with your brand. From ideation to launch, our skilled
+                developers harness the latest tech to deliver apps that
+                captivate users and yield tangible results. Let&apos;s turn your
+                vision into a digital reality that sets you apart.
               </p>
             </div>
           </div>
@@ -245,24 +271,29 @@ function Page() {
         <animated.div style={fourth}>
           <div className="flex flex-wrap items-center mt-20  text-center">
             <div className="w-full md:w-3/5 lg:w-1/2 px-4">
-              <img
+              <Image
                 src="/about4.jpeg"
                 alt="bulk editing"
+                width={300} // Set the desired width
+                height={200} // Set the desired height
                 className="inline-block rounded shadow-lg border border-merino-400"
               />
             </div>
             <div className="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12">
               <h3 className="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-              Dedicated Support
+                Dedicated Support
               </h3>
               <p className="sm:text-lg mt-6">
-              At Mentarro, your success is our top priority. We provide dedicated support every step of the way, ensuring that you have the guidance, resources, and expertise needed to achieve your goals. From initial consultation to ongoing support and optimization, we are committed to your success.
+                At Mentarro, your success is our top priority. We provide
+                dedicated support every step of the way, ensuring that you have
+                the guidance, resources, and expertise needed to achieve your
+                goals. From initial consultation to ongoing support and
+                optimization, we are committed to your success.
               </p>
             </div>
           </div>
         </animated.div>
       </div>
-
 
       <div className="bg-green-50 dark:bg-gray-800 pt-12 sm:pt-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -288,7 +319,6 @@ function Page() {
                         <AnimatedNumber value={numberFirst} />+
                       </animated.dd>
                     </div>
-
                   </div>
                   <div className="flex flex-col border-t border-b border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                     <dt className="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">
@@ -299,7 +329,6 @@ function Page() {
                         <AnimatedNumber value={numberSecond} />+
                       </animated.dd>
                     </div>
-
                   </div>
                   <div className="flex flex-col border-t border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l">
                     <dt className="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">
@@ -310,7 +339,6 @@ function Page() {
                         <AnimatedNumber value={numberThird} />+
                       </animated.dd>
                     </div>
-
                   </div>
                 </dl>
               </div>
@@ -321,33 +349,46 @@ function Page() {
 
       <section className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold mb-8 text-red-400">What our users are saying</h2>
+          <h2 className="text-4xl font-bold mb-8 text-red-400">
+            What our users are saying
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
-                <p className="text-gray-700 mb-4">
-                  "Being new to the field, I was thrilled to discover this organization. Their AI learning path is incredibly accessible, breaking down complex concepts into manageable steps. The guidance on interacting with AI is practical and hands-on, making it easy to apply in real-world scenarios. I&apos;m grateful for the opportunity to learn and grow with such a supportive community!".
-                </p>
-                <p className="text-gray-700 font-medium">- Junior</p>
-              </div>
+            <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
+              <p className="text-gray-700 mb-4">
+                "Being new to the field, I was thrilled to discover this
+                organization. Their AI learning path is incredibly accessible,
+                breaking down complex concepts into manageable steps. The
+                guidance on interacting with AI is practical and hands-on,
+                making it easy to apply in real-world scenarios. I&apos;m
+                grateful for the opportunity to learn and grow with such a
+                supportive community!".
+              </p>
+              <p className="text-gray-700 font-medium">- Junior</p>
+            </div>
 
-              <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
-                <p className="text-gray-700 mb-4">
-                "I &apos;m delighted to witness the inception of this remarkable new organization!I am confident that this venture will inspire and enable countless individuals to realize their aspirations, propelling them toward unparalleled achievements. Here&apos;s to a journey filled with triumphs and transformative impact!"
-                </p>
-                <p className="text-gray-700 font-medium">
-                - Well Wisher
-                </p>
-              </div>
+            <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
+              <p className="text-gray-700 mb-4">
+                "I &apos;m delighted to witness the inception of this remarkable
+                new organization!I am confident that this venture will inspire
+                and enable countless individuals to realize their aspirations,
+                propelling them toward unparalleled achievements. Here&apos;s to
+                a journey filled with triumphs and transformative impact!"
+              </p>
+              <p className="text-gray-700 font-medium">- Well Wisher</p>
+            </div>
 
-              <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
-                <p className="text-gray-700 mb-4">
-                "Their approach to AI education and career guidance is nothing short of exemplary.They are equipping students with essential skills for the future. I have no doubt that their commitment to excellence will cultivate a new generation of knowledgeable and skilled professionals. I eagerly anticipate the positive impact this organization will have on the educational landscape and beyond."
-                </p>
-                <p className="text-gray-700 font-medium">
-                  - Teacher
-                </p>
-              </div>
-
+            <div className="bg-white shadow rounded-lg p-8 hover:scale-105 transition-transform">
+              <p className="text-gray-700 mb-4">
+                "Their approach to AI education and career guidance is nothing
+                short of exemplary.They are equipping students with essential
+                skills for the future. I have no doubt that their commitment to
+                excellence will cultivate a new generation of knowledgeable and
+                skilled professionals. I eagerly anticipate the positive impact
+                this organization will have on the educational landscape and
+                beyond."
+              </p>
+              <p className="text-gray-700 font-medium">- Teacher</p>
+            </div>
           </div>
         </div>
       </section>
