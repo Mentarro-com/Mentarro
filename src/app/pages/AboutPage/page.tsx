@@ -88,7 +88,7 @@ function Page() {
   }, [inViewFirst, inViewSecond, inViewThird]);
 
   const { number: numberFirst } = useSpring({
-    number: animateFirst ? 65 : 0,
+    number: animateFirst ? 40 : 0,
     from: { number: 0 },
     config: { duration: 1500 },
   });
@@ -163,7 +163,7 @@ function Page() {
                   href="https://www.instagram.com/mentarro/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-all duration-200 text-pink-500 hover:text-pink-600 hover:underline"
+                  className="transition-all duration-200 text-pink-500 hover:text-pink-600 hover:underline ml-2"
                 >
                   Instagram
                 </a>
@@ -173,7 +173,7 @@ function Page() {
             <div className="relative">
               <img
                 className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
-                src="/about_top.jpeg"
+                src="/remote.jpg"
                 alt=""
               />
             </div>
@@ -309,9 +309,10 @@ function Page() {
             <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="mx-auto max-w-4xl">
                 <dl className="rounded-lg bg-white dark:bg-gray-800 shadow-lg sm:grid sm:grid-cols-3">
+
                   <div className="flex flex-col border-b border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-r">
                     <dt className="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">
-                      Instagram Followers
+                      Internship Provided
                     </dt>
 
                     <div className="target-component" ref={refFirst}>
@@ -320,6 +321,7 @@ function Page() {
                       </animated.dd>
                     </div>
                   </div>
+
                   <div className="flex flex-col border-t border-b border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                     <dt className="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">
                       Developed Websites
@@ -330,6 +332,9 @@ function Page() {
                       </animated.dd>
                     </div>
                   </div>
+
+                  
+
                   <div className="flex flex-col border-t border-gray-100 dark:border-gray-700 p-6 text-center sm:border-0 sm:border-l">
                     <dt className="order-2 mt-2 text-lg font-normal leading-6 text-gray-500 dark:text-gray-300">
                       Real-time Presented Guidance Program

@@ -88,7 +88,7 @@ function Index() {
         </div>
       </section>
 
-      <div className="flex justify-center mr-12">
+      <div className="flex justify-center mr-10">
         <div className="sm:flex items-center max-w-screen-xl ml-[20%]">
           <animated.div style={phone}>
             <div className="sm:w-1/2 p-10">
@@ -131,7 +131,7 @@ function Index() {
         </div>
       </div>
 
-      <div className=" bg-gray-500 py-6 flex flex-col  sm:py-12">
+      <div className=" bg-green-100 py-6 flex flex-col  sm:py-12">
         <div className="relative py-3 sm:max-w-xl sm:mx-auto">
           <div className="absolute inset-0 bg-gradient-to-r from-indigo-700 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"></div>
           <div className="text-white relative px-4 py-10 bg-indigo-400 shadow-lg sm:rounded-3xl sm:p-20">

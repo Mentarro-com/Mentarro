@@ -1,9 +1,10 @@
 import React from 'react'
+import img from '@/app/pages/remote.jpg'
 
 function index() {
   return (
     <div>
-      <div className='flex items-center justify-center h-96 bg-fixed bg-cover' style={{backgroundImage: 'url(./remote.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className='flex items-center justify-center h-96 bg-fixed bg-center bg-cover' style={{backgroundImage: `url(${img})`}}>
       <h1 className='text-5xl text-red-600 font-extrabold uppercase styled-text'>Remote Way Of Teaching</h1>
       <style jsx>{`
   .styled-text {

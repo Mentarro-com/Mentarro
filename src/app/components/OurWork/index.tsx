@@ -114,7 +114,7 @@ function Index() {
                 />
                 <div className="space-y-2">
                 <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">
-                  Carrer Guidance
+                  Career Guidance
                 </h5>
                 <p className="text-gray-300">
                   Provide a carrer learning path to freshers.

@@ -14,7 +14,7 @@ export default function Home() {
       <div className="bg-white">
         <HomePageVideo  />
         <HomeAboutUs />
-        <TeamCardSlider/>
+        {/* <TeamCardSlider/> */}
         <HomeSecondVideo/>
         <ContactForm />
         <Techslider />

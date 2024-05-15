@@ -94,7 +94,7 @@ function Index() {
 
       <ServiceVideo />
       <Work />
-      <ParallaBut />
+      {/* P */}
     </div>
   );
 }
